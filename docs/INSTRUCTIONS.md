@@ -2,23 +2,22 @@
 
 # Visitekaartje
 
-Redesign je visitekaartje op basis van een bestaande API.
+Redesign je visitekaartje met Node en een bestaande API.
 
 ## Context
 
 Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die je individueel uitvoert.
 
-In het S07W1-01-Node en S07W1-02-REST-API-en-JSON wordt stap voor stap behandeld wat je moet doen.
-
+In het S07W1-01-Node en S07W1-02-API-en-JSON wordt stap voor stap behandeld wat je moet doen.
 
 
 
 ## Briefing
-Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het kaartje staat in de databse.
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het kaartje staat in de databse. Hiermee ga je je visitekaarthe redesignen.
 
 ## Doel van deze opdracht
 
-Je leert met Node je code server-side te maken. 
+Je leert met Node je visitekaart server-side te maken. 
 
 
 ## Werkwijze
@@ -98,7 +97,7 @@ In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
 Focus sprint 7 - De focus in deze sprint ligt op teambuilding, samenwerken en hoe je een dynamische website kan maken waar bezoekers ook iets achter kunnen laten.
 
 Doel van deze opdracht:
-* Je leert met Node je code server-side te maken. 
+* Je leert met Node je visitekaart server-side te maken. 
 
 Voor deze leertaak gelden de gedragscriteria: 
 * M: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving
