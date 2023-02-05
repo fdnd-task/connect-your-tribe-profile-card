@@ -50,7 +50,7 @@ In de bouwfase ga je je visiekaartje overzetten naar Node.
 
 ### Aanpak overzetten van jouw visitekaartje naar Node
 
-1. Kopieren van de CSS en afbeeldingen naar /public (evt /public/style en /public/images)
+1. Kopieren de CSS en afbeeldingen van je visitekaartje uit sprint 1 naar /public (evt /public/style en /public/images)
 2. Uit elkaar trekken van de HTML in head, foot en midden
 3. In .ejs bestanden neerzetten
 
