@@ -1,7 +1,7 @@
 
 
 # Visitekaartje
-Redesign je visitekaartje met Node en data uit de whois.fdnd.nl API.
+Redesign je visitekaartje met Node en data uit de [whois.fdnd.nl](https://whois.fdnd.nl) API.
 
 ## Context
 Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die je individueel uitvoert.
@@ -9,57 +9,86 @@ Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die j
 In het S07W1-01-Node en S07W1-02-API-en-JSON wordt stap voor stap behandeld wat je moet doen.
 
 ## Briefing
-Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die bereiken is via de API op whois.fdnd.nl. Met deze data ga je jouw visitekaartje redesignen.
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die bereiken is via de API op [whois.fdnd.nl](https://whois.fdnd.nl). Met deze data ga je jouw visitekaartje redesignen.
 
 ## Doel van deze opdracht
-
 Je leert met Node jouw visitekaartje server-side te maken.
 
 ## Werkwijze
-Deze taak wordt behandeld in het bijhorende college. Deze opdracht gaat over alle fases van de development-lifecycle [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
+Voor deze opdracht doorlop je twee keer de fases van de development-lifecycle. Eerst ga je je [visitekaartje in Node-code bouwen](#1-visitekaartje-in-node), daarna doorloopje nog een keer de cycle om je visitekaartje met de een [API en JSON te ontwerpen en bouwen](#2-visitekaartje-met-rest-api-en-json). 
+
+
+
+
+
+
+
+## 1. Visitekaartje in Node
+Eerst ga je je visikaartje met Node bouwen.
 
 ### Analyseren
-In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Omdat dit een bijzondere leertaak is - je zet immers de eerste stappen in Node - is de analysefase best uitgebreid. We beginnen met het inrichten van de benodigde ontwikkelomgeving en het overzetten van je eerdere visitekaartje, pas daarna richten we een planbord in en gaan we van start.
+In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Voordat je met deze leertaak kan beginnen moet je Node instaleren en testen. 
 
-#### Aanpak analysefase
+#### Aanpak inrichten ontwikkelomgeving
 
-##### Inrichten ontwikkelomgeving (op maandag!)
 1. Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Kies voor Node 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
-  - (Optioneel) Maak het ‘Hello World’ voorbeeld via de [Getting Started Guide @ nodejs.org](https://nodejs.org/en/docs/guides/getting-started-guide/).
-  - (Optioneel, windows) Volg het [‘Hello World’ voorbeeld van @mohammedijas @ medium.com ](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
-  - (Optioneel, technisch) Lees de eerste vijf delen van [Introduction to Node @ nodejs.dev](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de Node ontwikkelomgeving.
-2. Navigeer naar [Docs > Members @ whois.fdnd.nl](https://whois.fdnd.nl/docs/members#get) en bestudeer hoe je met **first** en **skip** jouw gegevens kunt vinden. Zoek vervolgens jouw gegevens in de database en kopieer jouw *id*.
-3. Gebruik jouw *id* in het [formulier @ whois.fdnd.nl](https://whois.fdnd.nl/admin) en vul de ontbrekende gegevens in. In het ‘bio’ veld kan je html elementen gebruiken. Na het opslaan duurt het een paar minuten voordat jouw gegevens ook in de selectie te zien zijn.
-4. Fork deze leertaak van [connect-your-tribe-profile-card @ github/fdnd-task ](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
-5. Open deze leertaak in jouw editor (bijv. Visual Studio Code).
-6. Open de terminal door de toetscombinatie `` ^` `` (control + `) te gebruiken. Er opent een terminalscherm in de hoofdmap van jouw project.
-7. Voer in de terminal het commando `npm install` uit door het in te typen en op enter te drukken. Je gebruikt NPM, de Node Package Manager om een express inclusief alle afhankelijkheden te installeren.
+  - (Optioneel) Maak het ‘Hello World’ voorbeeld via de [Getting Started Guide](https://nodejs.org/en/docs/guides/getting-started-guide/).
+  - (Optioneel, windows) Volg het [‘Hello World’ voorbeeld](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
+  - (Optioneel, technisch) Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de Node ontwikkelomgeving.
+2. Fork deze leertaak van [connect-your-tribe-profile-card](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
+3. Open deze leertaak in jouw editor (bijv. Visual Studio Code).
+4. Open de terminal door de toetscombinatie `` ^` `` (control + `) te gebruiken. Er opent een terminalscherm in de hoofdmap van jouw project.
+5. Voer in de terminal het commando `npm install` uit door het in te typen en op enter te drukken. Je gebruikt NPM, de Node Package Manager om een express inclusief alle afhankelijkheden te installeren.
   - (Optioneel) Na de installatie is het mapje node_modules gevuld met alle afhankelijke packages. Scroll eens door deze map heen, vele honderden *open source* ontwikkelaars hebben de packages die je ziet gebouwd en die mag je gratis gebruiken. Ontwikkelen in Node is *standing on the shoulders of giants*.
-8. Start het voorbeeld visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
-9. Als het gelukt is vraag je een docent om jouw installatie te checken door het visitekaartje in je browser te laten zien.
+6. Start het voorbeeld visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
+<!-- 7. Als het gelukt is vraag je een docent om jouw installatie te checken door het visitekaartje in je browser te laten zien. -->
 
-##### Overzetten van jouw visitekaartje naar Node (op maandag!)
-- Kopieren van de CSS en afbeeldingen naar /public (evt /public/style en /public/images)
-- Uit elkaar trekken van de HTML in head, foot en midden
-- In .ejs bestanden neerzetten
-- Aan een docent laten zien!
 
-##### Plannen redesign voor jouw visitekaartje (voor woensdag!)
-- Projects aanzetten in GitHub
-- Issues aanmaken voor: schets, wireframe, breakdown
-- Beginnen met de ontwerpfase
+##### Materiaal
 
-##### Bronnen
-npmjs.org
 - [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 18.14.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node.
-- [Introduction to Node @ nodejs.dev](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving. Let op: dit is best een technisch verhaal, laat je niet afschrikken.
-- [Client-Server Overview @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview), voor als je het verhaal over client-server systemen nog eens rustig wilt nalezen.
-- [Introduction to the server side @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction), voor als je het verhaal over server side programming nog eens rustig wilt nalezen.
-- [Express/node introduction @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction), voor als je het verhaal over Node en Express nog eens rustig wilt nalezen.
-- [VSCode How To Open Terminal @ YouTube](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken.
+- [Introduction to Node](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving op Nodejs. Let op: dit is best een technisch verhaal, laat je niet afschrikken.
+- [VSCode How To Open Terminal](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken op Youtube.
 
-### Ontwerpen (voor woensdag!)
 
+### Bouwen
+In de bouwfase ga je je visiekaartje overzetten naar Node.
+
+#### Aanpak overzetten van jouw visitekaartje naar Node
+
+1. Kopieren van de CSS en afbeeldingen naar /public (evt /public/style en /public/images)
+2. Uit elkaar trekken van de HTML in head, foot en midden
+3. In .ejs bestanden neerzetten
+
+
+##### Materiaal
+
+- [Client-Server Overview](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview), voor als je het verhaal over client-server systemen nog eens rustig wilt nalezen op MDN.
+- [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction), voor als je het verhaal over server side programming nog eens rustig wilt nalezen op MDN.
+- [Express/node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction), voor als je het verhaal over Node en Express nog eens rustig wilt nalezen op MDN.
+
+
+
+
+
+
+
+
+## 2. Visitekaartje met REST API en JSON
+
+## Analyseren
+Voordat je aan de slag kan met het redesign van je visitekaartje moet je je gegevens in de WHOIS API aanvullen.
+
+### Aanpak WHOIS API 
+
+1. Ga naar de whois FDND whois API: https://whois.fdnd.nl
+1. Zoek jouw *id* op in de members lijst: https://whois.fdnd.nl/api/v1/members.
+2. Gebruik jouw *id* in het admin formulier en vul de ontbrekende gegevens in: https://whois.fdnd.nl/admin. In het ‘bio’ veld kan je ook HTML elementen gebruiken. 
+3. Sla jouw gegevens op. (Na het opslaan duurt het een paar minuten voordat jouw gegevens te zien zijn)
+4. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
+
+
+### Ontwerpen
 Bij de start van de ontwerpfase weet je wat het doel en het resultaat van je project zijn. In de ontwerpfase neem je ontwerp- beslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
 
 #### Aanpak ontwerpfase
@@ -69,23 +98,27 @@ Tekening maken van het visitekaartje
 1. Uitleg
 2. 
 
+Plannen redesign voor jouw visitekaartje
+- Projects aanzetten in GitHub
+- Issues aanmaken voor: schets, wireframe, breakdown
+- Beginnen met de ontwerpfase
+- 
 
-### Bouwen (woensdag na de workshop)
 
+### Bouwen
 In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en CSS.
 
+### Aanpak bouwfase
 - aanpassen van de opzet voor jouw visitekaartje aan de hand van de werkgroep
 - verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;))
 
 
 ### Integreren
-
 In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
-
 
 #### Aanpak integreerfase
 
-Code naar cyclic.sh zetten? (Vrijdag)
+Code naar cyclic.sh zetten?
 
 1. Nog een keertje lokaal checken
 2. Pushen naar je GitHub
