@@ -89,10 +89,15 @@ Bij de start van de ontwerpfase weet je wat het doel en het resultaat van je pro
 Tekening maken van het visitekaartje
 
 1. Uitleg
-2. Breakdoewn maken met goede HTML (hebbben ze nodig voor de bouwfase als ze met JSON beginnen?)
-3. Ook iets doen in de breakdown welke gegevens van de whois komen en welk 'hard coded' zijn?
+<!--
+3. <<< Breakdown maken met goede HTML (hebben ze nodig voor de bouwfase als ze met JSON beginnen)
+4. <<< Ook iets doen in de breakdown welke gegevens van de whois komen en welk 'hard coded' zijn?
+-->
 
-Plannen redesign voor jouw visitekaartje
+Plannen redesign voor jouw visitekaartje 
+<!--
+<<< leidt dit niet te veel af van klussen met node?
+-->
 - Projects aanzetten in GitHub
 - Issues aanmaken voor: schets, wireframe, breakdown
 - Beginnen met de ontwerpfase
@@ -103,14 +108,24 @@ Plannen redesign voor jouw visitekaartje
 In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en CSS.
 
 ### Aanpak bouwfase
-- aanpassen van de opzet voor jouw visitekaartje aan de hand van de werkgroep
-- verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;)) <<< ditkan weg denk ik? Hier ingaan op JSON? En daar HTML van maken? 
+- aanpassen van de opzet voor jouw visitekaartje aan de hand van de werkgroep 
+<!-- 
+<<< wat betekent dit?
+-->
+- verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;)) 
+<!-- 
+<<< dit kan weg denk ik? Doen ze nu ni de analyse fase
+<<< Hier een stappenplan over JSON en daar HTML van maken?  
+-->
 
 
 ### Materiaal bouwfase
 
-- Over JSON
-- Over ejs? templating?
+- 
+<!--
+<<< Over JSON
+<<< Over ejs? templating?
+-->
 
 
 ## Integreren
@@ -134,12 +149,15 @@ In de testfase controleer je of jouw aanpassingen werken zoals bedoeld.
 
 ### Aanpak testfase
 
-#### Usertest
 1. Laat jouw visitekaartje testen door een paar klasgenoten.
 2. Maak aantekeningen van de test.
 3. Ben je tevreden met het resultaat? Zo niet herhaal dan bovenstaande stappen.
 
-#### a11y test
+#### a11y test 
+<!-- 
+<<< Dit kan misschien weg? Focus op node. Dit doen we in sprint 8 of 9 weer uitgebreid
+<<< Misschien wel een HTML validate test doen W3C? We hebben het nog steeds over HTML 
+-->
 1. Lighthouse en handmatige tests uitvoeren
 2. Documenteren in je wiki
 
