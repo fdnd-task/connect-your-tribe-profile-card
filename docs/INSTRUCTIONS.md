@@ -19,20 +19,24 @@ Je leert met Node jouw visitekaartje server-side te maken.
 Deze taak wordt behandeld in het bijhorende college. Deze opdracht gaat over alle fases van de development-lifecycle [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), [integreren](#integreren) en [testen](#testen).
 
 ### Analyseren
-In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Omdat dit een bijzondere leertaak is, je eerste stapjes in Node, is de analysefase best uitgebreid.
+In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Omdat dit een bijzondere leertaak is - je zet immers de eerste stappen in Node - is de analysefase best uitgebreid. We beginnen met het inrichten van de benodigde ontwikkelomgeving en het overzetten van je eerdere visitekaartje, pas daarna richten we een planbord in en gaan we van start.
 
 #### Aanpak analysefase
 
-##### Installatie benodigde software en invoer van gegevens (op maandag!)
-- Installeer Node 18.14.0 LTS via nodejs.org
-- (eventueel hallo wereld voorbeeld van npmjs.org)
-- (whois database gegevens vullen?)
-- Forken van de leertaak in de lokale omgeving
-- NPM install voor het installeren van benodigde projecten
-- Checken van de installatie door node_modules map te checken, realiseren welk werk al voor ze gedaan is door andere open-source developers!
-- Node opstarten door in de terminal npm start te draaien
-- installatie checken in de browser door localhost:8000 te bekijken
-- Aan een docent laten zien!
+##### Inrichten ontwikkelomgeving (op maandag!)
+1. Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Kies voor Node 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
+  - (Optioneel) Maak het ‘Hello World’ voorbeeld via de [Getting Started Guide @ nodejs.org](https://nodejs.org/en/docs/guides/getting-started-guide/).
+  - (Optioneel, windows) Volg het [‘Hello World’ voorbeeld van @mohammedijas @ medium.com ](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
+  - (Optioneel, technisch) Lees de eerste vijf delen van [Introduction to Node @ nodejs.dev](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de Node ontwikkelomgeving.
+2. Navigeer naar [Docs > Members @ whois.fdnd.nl](https://whois.fdnd.nl/docs/members#get) en bestudeer hoe je met **first** en **skip** jouw gegevens kunt vinden. Zoek vervolgens jouw gegevens in de database en kopieer jouw *id*.
+3. Gebruik jouw *id* in het [formulier @ whois.fdnd.nl](https://whois.fdnd.nl/admin) en vul de ontbrekende gegevens in. In het ‘bio’ veld kan je html elementen gebruiken. Na het opslaan duurt het een paar minuten voordat jouw gegevens ook in de selectie te zien zijn.
+4. Fork deze leertaak van [connect-your-tribe-profile-card @ github/fdnd-task ](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
+5. Open deze leertaak in jouw editor (bijv. Visual Studio Code).
+6. Open de terminal door de toetscombinatie `` ^` `` (control + `) te gebruiken. Er opent een terminalscherm in de hoofdmap van jouw project.
+7. Voer in de terminal het commando `npm install` uit door het in te typen en op enter te drukken. Je gebruikt NPM, de Node Package Manager om een express inclusief alle afhankelijkheden te installeren.
+  - (Optioneel) Na de installatie is het mapje node_modules gevuld met alle afhankelijke packages. Scroll eens door deze map heen, vele honderden *open source* ontwikkelaars hebben de packages die je ziet gebouwd en die mag je gratis gebruiken. Ontwikkelen in Node is *standing on the shoulders of giants*.
+8. Start het voorbeeld visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
+9. Als het gelukt is vraag je een docent om jouw installatie te checken door het visitekaartje in je browser te laten zien.
 
 ##### Overzetten van jouw visitekaartje naar Node (op maandag!)
 - Kopieren van de CSS en afbeeldingen naar /public (evt /public/style en /public/images)
@@ -48,9 +52,11 @@ In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voere
 ##### Bronnen
 npmjs.org
 - [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 18.14.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node.
+- [Introduction to Node @ nodejs.dev](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving. Let op: dit is best een technisch verhaal, laat je niet afschrikken.
 - [Client-Server Overview @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview), voor als je het verhaal over client-server systemen nog eens rustig wilt nalezen.
 - [Introduction to the server side @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction), voor als je het verhaal over server side programming nog eens rustig wilt nalezen.
 - [Express/node introduction @ MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction), voor als je het verhaal over Node en Express nog eens rustig wilt nalezen.
+- [VSCode How To Open Terminal @ YouTube](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken.
 
 ### Ontwerpen (voor woensdag!)
 
