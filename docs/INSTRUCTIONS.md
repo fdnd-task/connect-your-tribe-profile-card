@@ -9,7 +9,7 @@ Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die j
 In het S07W1-01-Node en S07W1-02-API-en-JSON wordt stap voor stap behandeld wat je moet doen.
 
 ## Briefing
-Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die bereiken is via de API op [whois.fdnd.nl](https://whois.fdnd.nl). Met deze data ga je jouw visitekaartje redesignen.
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die te bereiken is via de API op [whois.fdnd.nl](https://whois.fdnd.nl). Met deze data ga je jouw visitekaartje redesignen.
 
 ## Doel van deze opdracht
 Je leert met Node jouw visitekaartje server-side te maken.
@@ -50,9 +50,9 @@ In de bouwfase ga je je visiekaartje overzetten naar Node.
 
 ### Aanpak overzetten van jouw visitekaartje naar Node
 
-1. Kopieren de CSS en afbeeldingen van je visitekaartje uit sprint 1 naar /public (evt /public/style en /public/images)
-2. Uit elkaar trekken van de HTML in head, foot en midden
-3. In .ejs bestanden neerzetten
+1. Kopieer de CSS en afbeeldingen van je visitekaartje uit sprint 1 naar /public (evt /public/style en /public/images)
+2. Bepaal welk deel van de index.html in de head, foot of index.ejs komt te staan
+3. Plaats de HTML uit sprint 1 in de .ejs bestanden
 
 ### Materiaal
 
