@@ -89,7 +89,8 @@ Bij de start van de ontwerpfase weet je wat het doel en het resultaat van je pro
 Tekening maken van het visitekaartje
 
 1. Uitleg
-2. 
+2. Breakdoewn maken met goede HTML (hebbben ze nodig voor de bouwfase als ze met JSON beginnen?)
+3. Ook iets doen in de breakdown welke gegevens van de whois komen en welk 'hard coded' zijn?
 
 Plannen redesign voor jouw visitekaartje
 - Projects aanzetten in GitHub
@@ -103,7 +104,13 @@ In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en 
 
 ### Aanpak bouwfase
 - aanpassen van de opzet voor jouw visitekaartje aan de hand van de werkgroep
-- verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;))
+- verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;)) <<< ditkan weg denk ik? Hier ingaan op JSON? En daar HTML van maken? 
+
+
+### Materiaal bouwfase
+
+- Over JSON
+- Over ejs? templating?
 
 
 ## Integreren
