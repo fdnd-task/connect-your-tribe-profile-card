@@ -18,18 +18,13 @@ Je leert met Node jouw visitekaartje server-side te maken.
 Voor deze opdracht doorlop je twee keer de fases van de development-lifecycle. Eerst ga je je [visitekaartje in Node-code bouwen](#1-visitekaartje-in-node), daarna doorloopje nog een keer de cycle om je visitekaartje met de een [API en JSON te ontwerpen en bouwen](#2-visitekaartje-met-rest-api-en-json). 
 
 
-
-
-
-
-
 ## 1. Visitekaartje in Node
 Eerst ga je je visikaartje met Node bouwen.
 
-### Analyseren
+## Analyseren
 In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Voordat je met deze leertaak kan beginnen moet je Node instaleren en testen. 
 
-#### Aanpak inrichten ontwikkelomgeving
+### Aanpak inrichten ontwikkelomgeving
 
 1. Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Kies voor Node 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
   - (Optioneel) Maak het ‘Hello World’ voorbeeld via de [Getting Started Guide](https://nodejs.org/en/docs/guides/getting-started-guide/).
@@ -43,25 +38,23 @@ In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voere
 6. Start het voorbeeld visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
 <!-- 7. Als het gelukt is vraag je een docent om jouw installatie te checken door het visitekaartje in je browser te laten zien. -->
 
-
-##### Materiaal
+### Materiaal
 
 - [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 18.14.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node.
 - [Introduction to Node](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving op Nodejs. Let op: dit is best een technisch verhaal, laat je niet afschrikken.
 - [VSCode How To Open Terminal](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken op Youtube.
 
 
-### Bouwen
+## Bouwen
 In de bouwfase ga je je visiekaartje overzetten naar Node.
 
-#### Aanpak overzetten van jouw visitekaartje naar Node
+### Aanpak overzetten van jouw visitekaartje naar Node
 
 1. Kopieren van de CSS en afbeeldingen naar /public (evt /public/style en /public/images)
 2. Uit elkaar trekken van de HTML in head, foot en midden
 3. In .ejs bestanden neerzetten
 
-
-##### Materiaal
+### Materiaal
 
 - [Client-Server Overview](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview), voor als je het verhaal over client-server systemen nog eens rustig wilt nalezen op MDN.
 - [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction), voor als je het verhaal over server side programming nog eens rustig wilt nalezen op MDN.
@@ -88,10 +81,10 @@ Voordat je aan de slag kan met het redesign van je visitekaartje moet je je gege
 4. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
 
 
-### Ontwerpen
+## Ontwerpen
 Bij de start van de ontwerpfase weet je wat het doel en het resultaat van je project zijn. In de ontwerpfase neem je ontwerp- beslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
 
-#### Aanpak ontwerpfase
+### Aanpak ontwerpfase
 
 Tekening maken van het visitekaartje
 
@@ -105,7 +98,7 @@ Plannen redesign voor jouw visitekaartje
 - 
 
 
-### Bouwen
+## Bouwen
 In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en CSS.
 
 ### Aanpak bouwfase
@@ -113,10 +106,10 @@ In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en 
 - verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;))
 
 
-### Integreren
+## Integreren
 In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
 
-#### Aanpak integreerfase
+### Aanpak integreerfase
 
 Code naar cyclic.sh zetten?
 
@@ -128,20 +121,21 @@ Code naar cyclic.sh zetten?
 5. URL overnemen en op GitHub invoeren
 
 
-### Testen
+## Testen
 
 In de testfase controleer je of jouw aanpassingen werken zoals bedoeld. 
 
-#### Aanpak testfase
+### Aanpak testfase
 
-##### Usertest
+#### Usertest
 1. Laat jouw visitekaartje testen door een paar klasgenoten.
 2. Maak aantekeningen van de test.
 3. Ben je tevreden met het resultaat? Zo niet herhaal dan bovenstaande stappen.
 
-##### a11y test
+#### a11y test
 1. Lighthouse en handmatige tests uitvoeren
 2. Documenteren in je wiki
+
 
 ## Criteria
 
