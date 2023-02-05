@@ -15,7 +15,7 @@ Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een
 Je leert met Node jouw visitekaartje server-side te maken.
 
 ## Werkwijze
-Voor deze opdracht doorlop je twee keer de fases van de development-lifecycle. Eerst ga je je [visitekaartje in Node-code bouwen](#1-visitekaartje-in-node), daarna doorloopje nog een keer de cycle om je visitekaartje met de een [API en JSON te ontwerpen en bouwen](#2-visitekaartje-met-rest-api-en-json). 
+Voor deze opdracht doorlop je twee keer verschillende fases van de development-lifecycle. Eerst ga je je [visitekaartje in Node-code bouwen](#1-visitekaartje-in-node), daarna doorloopje nog een keer de cycle om je visitekaartje met de een [API en JSON te ontwerpen en bouwen](#2-visitekaartje-met-rest-api-en-json). 
 
 
 ## 1. Visitekaartje in Node
