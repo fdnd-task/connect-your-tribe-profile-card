@@ -6,7 +6,7 @@ Redesign je visitekaartje met Node en data uit de [whois.fdnd.nl](https://whois.
 ## Context
 Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die je individueel uitvoert.
 
-In het S07W1-01-Node en S07W1-02-API-en-JSON wordt stap voor stap behandeld wat je moet doen.
+In het S07W1-02-Deep-Dive-Node en S07W1-03-API-en-JSON wordt stap voor stap behandeld wat je moet doen.
 
 ## Briefing
 Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die te bereiken is via de API op [whois.fdnd.nl](https://whois.fdnd.nl). Met deze data ga je jouw visitekaartje redesignen.
