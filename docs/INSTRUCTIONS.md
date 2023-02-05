@@ -171,7 +171,7 @@ Doel van deze opdracht:
 
 Voor deze leertaak gelden de gedragscriteria: 
 * M: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving
-* S: Je daagt verantwoording voor eigen resultaten, verwerkt ontvangen feedback en wijst teamleden op hun verantwoording
+* S: Je daagt verantwoording voor eigen resultaten, verwerkt ontvangen feedback ~~en wijst teamleden op hun verantwoording~~
 
 Deze opdracht is done als:
 - [ ] Je hebt je visistekaartje met Node
