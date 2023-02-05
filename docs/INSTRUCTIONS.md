@@ -45,8 +45,8 @@ In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voere
 - [VSCode How To Open Terminal](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken op Youtube.
 
 
-## Bouwen
-In de bouwfase ga je je visiekaartje overzetten naar Node.
+## Ontwerpen en Bouwen
+In de ontwerp- en bouwfase ga je je visiekaartje overzetten naar Node.
 
 ### Aanpak overzetten van jouw visitekaartje naar Node
 
