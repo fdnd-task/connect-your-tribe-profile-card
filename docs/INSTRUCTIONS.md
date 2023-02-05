@@ -19,7 +19,7 @@ Voor deze opdracht doorlop je twee keer de fases van de development-lifecycle. E
 
 
 ## 1. Visitekaartje in Node
-Eerst ga je je visikaartje met Node bouwen.
+Eerst ga je je visikaartje in Node bouwen.
 
 ## Analyseren
 In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Voordat je met deze leertaak kan beginnen moet je Node instaleren en testen. 
