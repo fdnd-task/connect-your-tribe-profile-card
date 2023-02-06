@@ -63,7 +63,6 @@ In de bouwfase zet je jouw eerdere visiekaartje over naar Node.
 - [Client-Server Overview](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview), voor als je het verhaal over client-server systemen nog eens rustig wilt nalezen op MDN.
 - [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction), voor als je het verhaal over server side programming nog eens rustig wilt nalezen op MDN.
 - [Express/node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction), voor als je het verhaal over Node en Express nog eens rustig wilt nalezen op MDN.
-- [Embedded JavaScript templating](https://ejs.co/)
 
 ### Integreren
 
@@ -83,7 +82,8 @@ Testen doen je deze cycle kort, je checkt of jouw visitekaartje werkt in deze ni
 ## 2. Visitekaartje met REST API en JSON
 
 ### Analyseren
-Voordat je aan de slag kan met het redesign van je visitekaartje moet je je gegevens in de WHOIS API aanvullen.
+
+Voor je aan de slag kunt met het herontwerpen en bouwen van je visitekaartje moet je jouw gegevens in de WHOIS API aanvullen, daarna bepaal je hoe je te werk gaat.
 
 #### Aanpak WHOIS API 
 
@@ -93,87 +93,83 @@ Voordat je aan de slag kan met het redesign van je visitekaartje moet je je gege
 3. Sla jouw gegevens op. (Na het opslaan duurt het een paar minuten voordat jouw gegevens te zien zijn)
 4. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
 
+#### Aanpak analyse
+
+1. Lees de rest van deze uitleg door en stel vast welke stappen je gaat nemen om jouw kaartje te herontwerpen.
+
+(Optioneel, als je daar headspace voor hebt) Richt een project board in op GitHub:
+1. Zet *projects* aan op deze repository in GitHub.
+1. Schiet de zojuist bepaalde stappen als issue in op de repository voor jouw visitekaartje.
+2. Maak een project board aan en neem alle issues op als *Todo*.
+3. Sleep jouw eerste taak naar de *Doing* kolom en ga aan de slag.
 
 ### Ontwerpen
-Bij de start van de ontwerpfase weet je wat het doel en het resultaat van je project zijn. In de ontwerpfase neem je ontwerp- beslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
+
+Het doel en resultaat van dit project is het opnieuw ontwerpen en ontwikkelen van jouw visitekaartje. Enerzijds leer je nieuwe technieken inzetten, je maakt jouw visitekaartje met Node/Express/EJS gebaseerd op een REST API met JSON. Anderzijds maak je na een half jaar oefening een kaartje wat beter gepresenteerd wie jij bent als frontender.
 
 #### Aanpak ontwerpfase
 
-Tekening maken van het visitekaartje
-
-1. Uitleg
-<!--
-3. <<< Breakdown maken met goede HTML (hebben ze nodig voor de bouwfase als ze met JSON beginnen)
-4. <<< Ook iets doen in de breakdown welke gegevens van de whois komen en welk 'hard coded' zijn?
--->
-
-Plannen redesign voor jouw visitekaartje 
-<!--
-<<< leidt dit niet te veel af van klussen met node?
--->
-- Projects aanzetten in GitHub
-- Issues aanmaken voor: schets, wireframe, breakdown
-- Beginnen met de ontwerpfase
-- 
-
+1. Maak een schets voor jouw visitekaartje nieuwe stijl, denk aan alle lessen uit *Semester 1: The Static Web*.
+2. Maak een *breakdown* met goede HTML tags en wat hints over CSS en eventueel JS voor interactie.
+3. Geef met een afwijkende kleur aan welke gegevens uit whois.fdnd.nl komen.
 
 ### Bouwen
-In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en CSS.
+
+Je realiseert jouw beslissingen uit de ontwerpfase in Node, HTML en CSS.
 
 #### Aanpak bouwfase
-- aanpassen van de opzet voor jouw visitekaartje aan de hand van de werkgroep 
-<!-- 
-<<< wat betekent dit?
--->
-- verwerken van jouw eigen gegevens in het visitekaartje via de persoonlijke route: https://whois.fdnd.nl/api/v1/member?id=cldczhjad16yh0av08jxscp0a (dat is Justus’ id, zoek je eigen id op via de /api/v1/members eindpoint, misschien moet je met *skip* en *first* spelen om je naam te vinden ;)) 
-<!-- 
-<<< dit kan weg denk ik? Doen ze nu ni de analyse fase
-<<< Hier een stappenplan over JSON en daar HTML van maken?  
--->
 
+1. Maak de nieuwe HTML versie van jouw visitekaartje door de `.ejs` bestanden in `/views/` en misschien`/views/partials` aan te passen. Zet de verwijzing naar CSS even uit en check door je server te starten met `npm start` even of je wijzigingen goed doorgevoerd zijn.
+2. Maak de nieuwe CSS versie van jouw visitekaartje door de `.css` bestanden aan te passen en check even of je wijzigingen goed doorgevoerd zijn.
+3. Voeg op basis van de uitleg in het college, met behulp van de `Fetch API` de aanroep naar `whois.fdnd.nl` toe aan `index.js` en check of er geen foutmeldingen ontstaan.
+4. Voer stapje voor stapje de gegevens uit de REST API door in jouw visitekaartje, check na elke stap of alles nog werkt.
+5. Blijf stapje voor stapje werken, stel vragen aan klasgenoten, op discord of aan een docent als je er niet uit komt.
 
 #### Materiaal bouwfase
 
-- 
-<!--
-<<< Over JSON
-<<< Over ejs? templating?
--->
-
+- [Using the Fetch API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Documentatie voor res.render() @ expressjs.com](https://expressjs.com/en/4x/api.html#res.render)
+- [Embedded JavaScript templating @ ejs.co](https://ejs.co/)
 
 ### Integreren
-In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
+
+Als je helemaal klaar bent en alles lokaal werkt ga je verder met het publiceren van jouw project op internet. Omdat we met Node werken is dit iets ingewikkelder dan voorheen, er moet namelijk een serveromgeving opgestart worden. Wij gebruiken cyclic.sh als hostingpartij maar je mag natuurlijk je eigen voorkeur volgen als die anders is.
 
 #### Aanpak integreerfase
 
-Code naar cyclic.sh zetten?
+1. Check nog een laatste keer of alles lokaal werkt door je server op te starten.
+2. *Commit* en *Push* jouw project naar GitHub
+3. Meld je met behulp van GitHub aan bij [cyclic.sh](https://www.cyclic.sh/)
+4. Klik op [Deploy](https://app.cyclic.sh/#/deploy) en selecteer het tabblad *Link Your Own* om jouw project te publiceren.
+5. Zoek de juiste repository, *connect-your-tribe-profile-card* als je niets hernoemd hebt. Cyclic importeert jouw code en voert `npm start` uit.
+6. Er wordt een unieke naam voor jouw project gegenereerd, de naam van het voorbeeld is `https://wandering-hare-overshirt.cyclic.app/`.
+7. Open je visitekaartje in je browser, check of alles werkt en voer daarna deze url in bij jouw repository op GitHub. Op deze manier kan je snel naar jouw visitekaartje navigeren.
+8. (Optioneel) De naam die cyclic genereert is best awkward. Je kunt een eigen domeinnaam koppelen maar dit kost je € 7,50 per jaar (€ 0,99 eerste jaar). Als je uitleg wilt volg je het *Nerd* klasje aankomende weken waarin we dat gaan doen.
 
-1. Nog een keertje lokaal checken
-2. Pushen naar je GitHub
-2. Inloggen met GitHub op cyclic.sh
-3. Selecteren van de juiste repository uit jouw GitHub
-4. Build controleren
-5. URL overnemen en op GitHub invoeren
+#### Materiaal integratiefase
 
+- [Cyclic Hosting](https://www.cyclic.sh/)
+- [Registratie domeinnaam @ Transip](https://www.transip.nl/)
 
 ### Testen
 
-In de testfase controleer je of jouw aanpassingen werken zoals bedoeld. 
+In de testfase controleer je of jouw aanpassingen werken zoals bedoeld en jouw visitekaartje voldoet aan standaarden.
 
 #### Aanpak testfase
 
 1. Laat jouw visitekaartje testen door een paar klasgenoten.
-2. Maak aantekeningen van de test.
+2. Maak aantekeningen van de test, wat valt ze op?
+3. Schiet issues in voor je testbevindingen.
 3. Ben je tevreden met het resultaat? Zo niet herhaal dan bovenstaande stappen.
 
-#### a11y test 
-<!-- 
-<<< Dit kan misschien weg? Focus op node. Dit doen we in sprint 8 of 9 weer uitgebreid
-<<< Misschien wel een HTML validate test doen W3C? We hebben het nog steeds over HTML 
--->
-1. Lighthouse en handmatige tests uitvoeren
-2. Documenteren in je wiki
+#### (Optioneel) A11Y test
 
+Het is een goede gewoonte om standaard even wat tests uit te voeren. Besteed hier niet te veel tijd aan, een half uurtje moet genoeg zijn.
+
+1. Test jouw visitekaartje in de [w3c validator](https://validator.w3.org/).
+2. Voer een lighthouse accessibility test uit, vergeet niet de handmatige tests!
+3. Documenteren je bevindingen in je wiki.
+4. Schiet eventuele aandachtspunten in als issue.
 
 ## Criteria
 
