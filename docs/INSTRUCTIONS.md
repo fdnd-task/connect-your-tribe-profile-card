@@ -15,16 +15,16 @@ Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een
 Je leert met Node jouw visitekaartje server-side te maken.
 
 ## Werkwijze
-Voor deze opdracht doorloop je twee keer verschillende fases van de development-lifecycle. Eerst ga je je [visitekaartje in Node-code bouwen](#1-visitekaartje-in-node), daarna doorloop je nog een keer de DLC om je visitekaartje met een [API en JSON te ontwerpen en bouwen](#2-visitekaartje-met-rest-api-en-json). 
-
+In deze opdracht doorloop je twee keer de fases van de development-lifecycle. Eerst bouw je jouw [visitekaartje in Node](#1-visitekaartje-in-node), daarna doorloop je nogmaals de cyclus om je [visitekaartje met een REST API en JSON ](#2-visitekaartje-met-rest-api-en-json) te (her)ontwerpen, bouwen en publiceren via een hosting systeem voor Node projecten. 
 
 ## 1. Visitekaartje in Node
-Eerst ga je je visikaartje in Node bouwen.
 
-## Analyseren
-In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Voordat je met deze leertaak kan beginnen moet je Node instaleren en testen. 
+In deze eerste ronde bouw je op basis van een voorbeeld jouw visitekaartje uit Sprint 1 exact na. Je besteed dus geen aandacht aan een herontwerp, dat komt later.
 
-### Aanpak inrichten ontwikkelomgeving
+### Analyseren
+In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Voor je met deze leertaak kan beginnen moet je ontwikkelomgeving ingericht worden door Node te installeren. 
+
+#### Aanpak inrichten ontwikkelomgeving
 
 1. Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Kies voor Node 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
   - (Optioneel) Maak het ‘Hello World’ voorbeeld via de [Getting Started Guide](https://nodejs.org/en/docs/guides/getting-started-guide/).
@@ -36,43 +36,56 @@ In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voere
 5. Voer in de terminal het commando `npm install` uit door het in te typen en op enter te drukken. Je gebruikt NPM, de Node Package Manager om een express inclusief alle afhankelijkheden te installeren.
   - (Optioneel) Na de installatie is het mapje node_modules gevuld met alle afhankelijke packages. Scroll eens door deze map heen, vele honderden *open source* ontwikkelaars hebben de packages die je ziet gebouwd en die mag je gratis gebruiken. Ontwikkelen in Node is *standing on the shoulders of giants*.
 6. Start het voorbeeld visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
-<!-- 7. Als het gelukt is vraag je een docent om jouw installatie te checken door het visitekaartje in je browser te laten zien. -->
+7. Als het werkt zet je je server weer uit door in de terminal de toetscombinatie `^c` (control + c) in te voeren. Deze toetsencombinatie wordt in de terminal gebruikt om de huidige taak te stoppen en *controle* (vandaar de c) terug te krijgen van het programma.
 
-### Materiaal
+#### Materiaal
 
-- [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 18.14.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node.
-- [Introduction to Node](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving op Nodejs. Let op: dit is best een technisch verhaal, laat je niet afschrikken.
+- [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 18.14.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node welke ondersteund wordt met goede documentatie.
 - [VSCode How To Open Terminal](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken op Youtube.
+- (Optioneel) [Introduction to Node](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving op Nodejs. Let op: dit is best een technisch verhaal. De eerste zes pagina’s zijn interessant.
 
+### Ontwerpen
 
-## Ontwerpen en Bouwen
-In de ontwerp- en bouwfase ga je je visiekaartje overzetten naar Node.
+We slaan deze eerste cycle de ontwerpfase over maar als je wilt kan je nog eens terugkijken naar de ontwerpen die je in *Sprint 1: Your Tribe* maakte en je verbazen over hoe ver je al gekomen bent in een half jaar ;)
 
-### Aanpak overzetten van jouw visitekaartje naar Node
+### Bouwen
+In de bouwfase zet je jouw eerdere visiekaartje over naar Node.
 
-1. Kopieer de CSS en afbeeldingen van je visitekaartje uit sprint 1 naar /public (evt /public/style en /public/images)
-2. Bepaal welk deel van de index.html in de head, foot of index.ejs komt te staan
-3. Plaats de HTML uit sprint 1 in de .ejs bestanden
+#### Aanpak overzetten van jouw visitekaartje naar Node
 
-### Materiaal
+1. Kopieer de CSS bestanden en alle afbeeldingen van jouw visitekaartje uit sprint 1 naar de `/public` map. Als je dat nodig vindt richt je mappen in onder `/public`, bijvoorbeeld `/public/style` voor je stylesheets en `/public/images` voor je afbeeldingen. Zoals in het college is uitgelegd zijn bestanden in de `/public/` map bij het opstarten van jouw Node/Express omgeving bereikbaar op `http://localhost:8000`. Als je straks vanuit jouw HTML verwijst dan doe je dat dus naar `/style/style.css` als je CSS bestand in het mapje `/public/style/style.css` staat.
+2. Je gaat jouw HTML broncode uit elkaar halen en in drie delen opsplitsen: De hele <head> sectie, inclusief de <body> openen tag komen in `/views/partials/head.ejs` te staan. De </body> en </html> tags komen in `/views/partials/foot.ejs` te staan. Deze delen zetten we apart neer omdat ze op elke pagina in een site hetzelfde zijn. Met *Embedded JavaScript (EJS)* kunnen we deze delen *includen* en hoeven we onszelf minder te herhalen.. DRY FTW!
+3. Zet de rest van de HTML van jouw visitekaartje in `/views/index.ejs`. Let op: overschrijf bij het kopiëren de eerste en laatste regel niet! De opdracht die je hier ziet is de EJS manier om bestanden te *includen*: `<%- include('./partials/head') %>` zegt zoveel als, neem de inhoud van het `head.ejs` bestand en plaats dat hier.
+4. Ga na of er eventueel extra code is die je als include wilt opnemen omdat het op meerdere pagina’s herhaald wordt, bijvoorbeeld een menu. Maak een extra bestand aan aan voor je menu `/views/partials/menu.ejs` en *include* het op dezelfde manier als bij (3).
+
+#### Materiaal
 
 - [Client-Server Overview](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview), voor als je het verhaal over client-server systemen nog eens rustig wilt nalezen op MDN.
 - [Introduction to the server side](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction), voor als je het verhaal over server side programming nog eens rustig wilt nalezen op MDN.
 - [Express/node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction), voor als je het verhaal over Node en Express nog eens rustig wilt nalezen op MDN.
+- [Embedded JavaScript templating](https://ejs.co/)
 
+### Integreren
 
+Integreren slaan we over omdat dat met Node een aantal extra stappen kost.
 
+### Testen
 
+Testen doen je deze cycle kort, je checkt of jouw visitekaartje werkt in deze nieuwe omgeving.
 
+#### Aanpak testen
 
-
+1. Start het je visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
+2. Laat als het werkt met gepaste trots jouw oude visitekaartje zien aan een klasgenoot. Geef ook even een seintje aan je docent.
+3. Als alles werkt zet je je server weer uit door in de terminal de toetscombinatie `^c` (control + c) in te voeren. 
+4. Besef dat je net de eerste stappen in Node/Express/EJS hebt gezet, hier begint jouw serverside avontuur! Ontspan even, we gaan woensdag verder met het maken van jouw visitekaartje met een REST API en JSON.
 
 ## 2. Visitekaartje met REST API en JSON
 
-## Analyseren
+### Analyseren
 Voordat je aan de slag kan met het redesign van je visitekaartje moet je je gegevens in de WHOIS API aanvullen.
 
-### Aanpak WHOIS API 
+#### Aanpak WHOIS API 
 
 1. Ga naar de whois FDND API: https://whois.fdnd.nl
 1. Zoek jouw *id* op in de members lijst: https://whois.fdnd.nl/docs/members.
@@ -81,10 +94,10 @@ Voordat je aan de slag kan met het redesign van je visitekaartje moet je je gege
 4. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
 
 
-## Ontwerpen
+### Ontwerpen
 Bij de start van de ontwerpfase weet je wat het doel en het resultaat van je project zijn. In de ontwerpfase neem je ontwerp- beslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
 
-### Aanpak ontwerpfase
+#### Aanpak ontwerpfase
 
 Tekening maken van het visitekaartje
 
@@ -104,10 +117,10 @@ Plannen redesign voor jouw visitekaartje
 - 
 
 
-## Bouwen
+### Bouwen
 In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en CSS.
 
-### Aanpak bouwfase
+#### Aanpak bouwfase
 - aanpassen van de opzet voor jouw visitekaartje aan de hand van de werkgroep 
 <!-- 
 <<< wat betekent dit?
@@ -119,7 +132,7 @@ In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en 
 -->
 
 
-### Materiaal bouwfase
+#### Materiaal bouwfase
 
 - 
 <!--
@@ -128,10 +141,10 @@ In de bouwfase realiseer je de beslissingen uit de ontwerpfase in Node, HTML en 
 -->
 
 
-## Integreren
+### Integreren
 In de integratiefase voer je de aanpassingen door zodat iedereen ze kan zien.
 
-### Aanpak integreerfase
+#### Aanpak integreerfase
 
 Code naar cyclic.sh zetten?
 
@@ -143,11 +156,11 @@ Code naar cyclic.sh zetten?
 5. URL overnemen en op GitHub invoeren
 
 
-## Testen
+### Testen
 
 In de testfase controleer je of jouw aanpassingen werken zoals bedoeld. 
 
-### Aanpak testfase
+#### Aanpak testfase
 
 1. Laat jouw visitekaartje testen door een paar klasgenoten.
 2. Maak aantekeningen van de test.
@@ -174,7 +187,7 @@ Voor deze leertaak gelden de gedragscriteria:
 * S: Je daagt verantwoording voor eigen resultaten, verwerkt ontvangen feedback ~~en wijst teamleden op hun verantwoording~~
 
 Deze opdracht is done als:
-- [ ] Je hebt je visistekaartje met Node
-- [ ] Je kaartje gebruikt gegevens uit de API van whois.fdnd.nl
+- [ ] Je hebt je visitekaartje gemaakt met Node
+- [ ] Je kaartje gebruikt gegevens uit de REST API op whois.fdnd.nl
 - [ ] Je kaartje is gepubliceerd via cyclic.sh
 - [ ] Het eindresultaat gedocumenteerd in de Readme aan de hand van de DLC
