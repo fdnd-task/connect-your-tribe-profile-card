@@ -186,4 +186,4 @@ Deze opdracht is done als:
 - [ ] Je hebt je visitekaartje gemaakt met Node
 - [ ] Je kaartje gebruikt gegevens uit de REST API op whois.fdnd.nl
 - [ ] Je kaartje is gepubliceerd via cyclic.sh
-- [ ] Het eindresultaat gedocumenteerd in de Readme aan de hand van de DLC
+- [ ] Het eindresultaat is gedocumenteerd in de Wiki aan de hand van de DLC
