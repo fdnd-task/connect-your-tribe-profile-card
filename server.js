@@ -1,6 +1,10 @@
 // Importeer express uit de node_modules map
 import express from 'express'
 
+const personData = await fetch('https://fdnd.directus.app/items/Person/9')
+  .then((response) => response.json())
+  .catch((error) => error)
+
 // Maak een nieuwe express app aan
 const app = express()
 
