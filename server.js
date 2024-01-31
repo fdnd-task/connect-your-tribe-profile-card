@@ -10,8 +10,9 @@ const data = await fetchJson('https://fdnd.directus.app/items/Person/9')
 // Maak een nieuwe express app aan
 const app = express()
 
-// Stel ejs in als template engine en stel de 'views' map in
+// Stel ejs in als template engine
 app.set('view engine', 'ejs')
+// stel de map met ejs templates in
 app.set('views', './views')
 
 // Gebruik de map 'public' voor statische resources
