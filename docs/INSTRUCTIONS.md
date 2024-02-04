@@ -173,17 +173,8 @@ Het is een goede gewoonte om standaard even wat tests uit te voeren. Besteed hie
 
 ## Criteria
 
-Focus sprint 7 - De focus in deze sprint ligt op teambuilding, samenwerken en hoe je een dynamische website kan maken waar bezoekers ook iets achter kunnen laten.
-
-Doel van deze opdracht:
-* Je leert met Node je visitekaart server-side te maken. 
-
-Voor deze leertaak gelden de gedragscriteria: 
-* M: Je combineert aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving
-* S: Je draagt verantwoording voor eigen resultaten, verwerkt ontvangen feedback ~~en wijst teamleden op hun verantwoording~~
-
 Deze opdracht is done als:
 - [ ] Je hebt je visitekaartje gemaakt met Node
 - [ ] Je kaartje gebruikt gegevens uit de REST API op whois.fdnd.nl
 - [ ] Je kaartje is gepubliceerd via cyclic.sh
-- [ ] Het eindresultaat is gedocumenteerd in de Wiki aan de hand van de DLC
+- [ ] Het eindresultaat en iteratieve werkwijze is gedocumenteerd in de Wiki
