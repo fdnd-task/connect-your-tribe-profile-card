@@ -90,8 +90,7 @@ Voor je aan de slag kunt met het herontwerpen en bouwen van je visitekaartje moe
 1. Ga naar de whois FDND API: https://whois.fdnd.nl
 1. Zoek jouw *id* op in de members lijst: https://whois.fdnd.nl/docs/members.
 2. Gebruik jouw *id* in het admin formulier en vul de ontbrekende gegevens in: https://whois.fdnd.nl/admin. In het ‘bio’ veld kan je ook HTML elementen gebruiken. 
-3. Sla jouw gegevens op. (Na het opslaan duurt het een paar minuten voordat jouw gegevens te zien zijn)
-4. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
+3. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
 
 #### Aanpak analyse
 
