@@ -19,14 +19,14 @@ In deze opdracht doorloop je twee keer de fases van de development-lifecycle. Ee
 
 ## 1. Visitekaartje in Node
 
-In deze eerste ronde bouw je op basis van een voorbeeld jouw visitekaartje uit Sprint 1 exact na. Je besteed dus geen aandacht aan een herontwerp, dat komt later.
+In deze eerste ronde bouw je op basis van een voorbeeld jouw visitekaartje uit Sprint 1 exact na. Je besteedt dus geen aandacht aan een herontwerp, dat komt later.
 
 ### Analyseren
 In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen. Voor je met deze leertaak kan beginnen moet je ontwikkelomgeving ingericht worden door Node te installeren. 
 
 #### Aanpak inrichten ontwikkelomgeving
 
-1. Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Kies voor Node 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
+1. Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Kies voor Node 20.11.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
   - (Optioneel) Maak het ‘Hello World’ voorbeeld via de [Getting Started Guide](https://nodejs.org/en/docs/guides/getting-started-guide/).
   - (Optioneel, windows) Volg het [‘Hello World’ voorbeeld](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
   - (Optioneel, technisch) Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de Node ontwikkelomgeving.
@@ -40,7 +40,7 @@ In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voere
 
 #### Materiaal
 
-- [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 18.14.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node welke ondersteund wordt met goede documentatie.
+- [Nodejs.org](https://nodejs.org/en/), voor de installatie van Node op jouw systeem, kies voor Node 20.11.0 LTS (Long Term Support). Dit is de meest stabiele versie van Node welke ondersteund wordt met goede documentatie.
 - [VSCode How To Open Terminal](https://www.youtube.com/watch?v=OmQhOnBzg_k), om iemand de terminal te zien openen en gebruiken op Youtube.
 - (Optioneel) [Introduction to Node](https://nodejs.dev/en/learn/), voor een in depth introductie met de Node ontwikkelomgeving op Nodejs. Let op: dit is best een technisch verhaal. De eerste zes pagina’s zijn interessant.
 
@@ -70,13 +70,13 @@ Integreren slaan we over omdat dat met Node een aantal extra stappen kost.
 
 ### Testen
 
-Testen doen je deze cycle kort, je checkt of jouw visitekaartje werkt in deze nieuwe omgeving.
+Testen doen we deze cycle maar kort; je checkt of jouw visitekaartje werkt in deze nieuwe omgeving.
 
 #### Aanpak testen
 
-1. Start het je visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
+1. Start je visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is, komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
 2. Laat als het werkt met gepaste trots jouw oude visitekaartje zien aan een klasgenoot. Geef ook even een seintje aan je docent.
-3. Als alles werkt zet je je server weer uit door in de terminal de toetscombinatie `^c` (control + c) in te voeren. 
+3. Als alles werkt, zet je je server weer uit door in de terminal de toetscombinatie `^c` (control + c) in te voeren. 
 4. Besef dat je net de eerste stappen in Node/Express/EJS hebt gezet, hier begint jouw serverside avontuur! Ontspan even, we gaan woensdag verder met het maken van jouw visitekaartje met een REST API en JSON.
 
 ## 2. Visitekaartje met REST API en JSON
@@ -88,9 +88,9 @@ Voor je aan de slag kunt met het herontwerpen en bouwen van je visitekaartje moe
 #### Aanpak WHOIS API 
 
 1. Ga naar de whois FDND API: https://whois.fdnd.nl
-1. Zoek jouw *id* op in de members lijst: https://whois.fdnd.nl/docs/members.
-2. Gebruik jouw *id* in het admin formulier en vul de ontbrekende gegevens in: https://whois.fdnd.nl/admin. In het ‘bio’ veld kan je ook HTML elementen gebruiken. 
-3. Ga naar de GET member pagina op jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/member
+2. Zoek jouw *id* op in de person lijst: https://whois.fdnd.nl/docs/person.
+3. Gebruik jouw *id* in het admin formulier en vul de ontbrekende gegevens in: https://whois.fdnd.nl/admin. In het ‘bio’ veld kan je ook HTML elementen gebruiken. 
+4. Ga naar de GET person pagina om jouw gegevens in JSON te bekijken: https://whois.fdnd.nl/docs/person
 
 #### Aanpak analyse
 
@@ -104,7 +104,7 @@ Voor je aan de slag kunt met het herontwerpen en bouwen van je visitekaartje moe
 
 ### Ontwerpen
 
-Het doel en resultaat van dit project is het opnieuw ontwerpen en ontwikkelen van jouw visitekaartje. Enerzijds leer je nieuwe technieken inzetten, je maakt jouw visitekaartje met Node/Express/EJS gebaseerd op een REST API met JSON. Anderzijds maak je na een half jaar oefening een kaartje wat beter gepresenteerd wie jij bent als frontender.
+Het doel en resultaat van dit project is het opnieuw ontwerpen en ontwikkelen van jouw visitekaartje. Enerzijds leer je nieuwe technieken inzetten, je maakt jouw visitekaartje met Node/Express/EJS gebaseerd op een REST API met JSON. Anderzijds maak je na een half jaar oefening een kaartje wat beter representeert wie jij bent als frontender.
 
 #### Aanpak ontwerpfase
 
@@ -120,7 +120,7 @@ Je realiseert jouw beslissingen uit de ontwerpfase in Node, HTML en CSS.
 
 1. Maak de nieuwe HTML versie van jouw visitekaartje door de `.ejs` bestanden in `/views/` en misschien`/views/partials` aan te passen. Zet de verwijzing naar CSS even uit en check door je server te starten met `npm start` even of je wijzigingen goed doorgevoerd zijn.
 2. Maak de nieuwe CSS versie van jouw visitekaartje door de `.css` bestanden aan te passen en check even of je wijzigingen goed doorgevoerd zijn.
-3. Voeg op basis van de uitleg in het college, met behulp van de `Fetch API` de aanroep naar `whois.fdnd.nl` toe aan `index.js` en check of er geen foutmeldingen ontstaan.
+3. Pas op basis van de uitleg in het college, met behulp van de `Fetch API` de aanroep naar `whois.fdnd.nl` in `server.js` aan, en check of er geen foutmeldingen ontstaan.
 4. Voer stapje voor stapje de gegevens uit de REST API door in jouw visitekaartje, check na elke stap of alles nog werkt.
 5. Blijf stapje voor stapje werken, stel vragen aan klasgenoten, op discord of aan een docent als je er niet uit komt.
 
@@ -159,7 +159,7 @@ In de testfase controleer je of jouw aanpassingen werken zoals bedoeld en jouw v
 1. Laat jouw visitekaartje testen door een paar klasgenoten.
 2. Maak aantekeningen van de test, wat valt ze op?
 3. Schiet issues in voor je testbevindingen.
-3. Ben je tevreden met het resultaat? Zo niet herhaal dan bovenstaande stappen.
+4. Ben je tevreden met het resultaat? Zo niet herhaal dan bovenstaande stappen.
 
 #### (Optioneel) A11Y test
 
