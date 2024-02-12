@@ -4,8 +4,9 @@ import express from 'express'
 // Importeer de zelfgemaakte functie fetchJson uit de ./helpers map
 import fetchJson from './helpers/fetch-json.js'
 
-// Haal data op uit de FDND API, ga pas verder als de data gedownload is
-const data = await fetchJson('https://fdnd.directus.app/items/person/65')
+// Haal data op uit de WHOIS API, ga pas verder als de data gedownload is
+const apiData = await fetchJson('https://fdnd.directus.app/items/person/65')
+
 // console.log(data); // uncomment om de opgehaalde data te checken
 
 // Maak een nieuwe express app aan
@@ -21,8 +22,8 @@ app.use(express.static('public'))
 
 // Maak een GET route voor de index
 app.get('/', function (request, response) {
-  // Render index.ejs uit de views map en geef uit FDND API opgehaalde data mee
-  response.render('index', data)
+   // Render index.ejs uit de views map en geef de opgehaalde data mee, in een variabele genaamd person
+   response.render('index', {person: apiData.data})
 })
 
 // Maak een POST route voor de index
