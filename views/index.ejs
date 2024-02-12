@@ -1,125 +1,14 @@
 <%- include('./partials/head') %>
 
+<article>
+  <header>
+    <h1>Hallo</h1>
+    <p>mijn naam is</p>
+  </header>
 
-  <main>
-    <div class="gradient">
-      <svg viewBox="0 0 2041 1466" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient cx="45.978%" cy="42.664%" fx="45.978%" fy="42.664%" r="41.428%"
-            gradientTransform="matrix(0 .93844 -1 0 .886 -.005)" id="g-teal-blue">
-            <stop stop-color="#3D00FF" stop-opacity=".612" offset="0%"></stop>
-            <stop stop-color="#00AC8E" stop-opacity=".427" offset="57.326%"></stop>
-            <stop stop-opacity="0" offset="100%"></stop>
-          </radialGradient>
-          <filter x="-6.2%" y="-5.8%" width="112.4%" height="111.7%" filterUnits="objectBoundingBox" id="b">
-            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
-          </filter>
-        </defs>
-        <path
-          d="M464 628c-597.384 444.965-686.384 689.965-267 735 629.076 67.553 930.337-1039.804 1288-862 399.891 198.797 608.891 803.464 627 1814-273.242-730.477-393.909-1265.477-362-1605 31.909-339.523 233.242-662.856 604-970L464 628Z"
-          fill="url(#g-teal-blue)" filter="url(#b)" fill-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="business-card-full">
-      <section class="business-card business-card--front-front">
-        <p class="business-card__name large-heading">
-          <span>CRS</span>
-          <span aria-hidden>CRS</span>
-        </p>
-      </section>
-      <section class="business-card business-card--front-back">
-        <div class="business-card__rotate">
-          <div class="business-card__text">
-            <div class="business-card__main">
-              <div class="left">
-                <div class="business-card__image">
-                  <img src="./img/cyd.jpg" alt="Cyd">
-                </div>
-                <div class="text">
-                  <h1 class="medium-body caps">
-                    <%-person.name%> <%-person.surname%>
-                  </h1>
-                  <div class="content">
-                    <p class="xsmall-body business-card__job-title">
-                      <%-person.bio%>
-                    </p>
-                    <p class="xsmall-body business-card__email">
-                      m: <a href="mailto:<%-customData.email%>"><%-customData.email%></a>
-                      <br>
-                      w: <a href="<%-person.website%>"><%- person.website.replace('https://', '').replace('/', '')%></a>
-                    </p>
+  <p><%= data.name %></p>
 
-                    <p class="xsmall-body">
-                      <%-customData.workHistory%>
-                    </p>
-                    <p class="xsmall-body">
-                      
-                    </p>
-                  </div>
-                  <div class="business-card__socials row">
-                    <% customData.socials.forEach(social =>  { %>
-                      <a class="xsmall-body caps business-card__<%-social.name%>>" target="_blank" href="<%-social.url%>"><%-social.name%></a>
-                    <% }) %>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
+  <footer></footer>
+</article>
 
-          </div>
-        </div>
-      </section>
-      <section class="business-card business-card--back-front">
-        <div class="business-card__text">
-          <div class="business-card__top">
-            <p class="medium-body business-card__question">
-              <span>
-                Favorite HTML color:
-              </span>
-            </p>
-            <p class="small-body color--<%-customData.extraInfo.favoriteColor%>">
-              <%-customData.extraInfo.favoriteColor%>
-            </p>
-
-            <p class="medium-body business-card__question">
-              <span>
-                I get my inspiration from:
-              </span>
-            </p>
-            <p class="small-body">
-              <%-customData.extraInfo.inspiredBy%>
-            </p>
-
-            <p class="medium-body business-card__question">
-              <span>
-                Current obsession:
-              </span>
-            </p>
-            <p class="small-body">
-              <%-customData.extraInfo.obsessedBy%>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="business-card business-card--back-back">
-        <p class="small-body caps">
-          hacking all the things
-        </p>
-      </section>
-  </main>
-  <svg class="clippie" viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
-    <clipPath id="clippie" clipPathUnits="objectBoundingBox">
-      <path
-        d="M720,0 L720,400 L-4.54747351e-13,400 L-4.54747351e-13,0 L720,0 Z M19,54 C19,73.3299662 34.6700338,89 54,89 C63.0705503,89 71.3352062,85.5495557 77.5530176,79.8896173 L74.5431111,76.9828478 C69.2224732,81.4452643 62.3625349,84.1323246 54.875,84.1323246 C37.9612795,84.1323246 24.25,70.4210451 24.25,53.5073246 C24.25,45.735787 27.1447669,38.6403585 31.9148689,33.2404706 L28.5418559,29.981479 C22.6262895,36.2493457 19,44.7011902 19,54 Z M54,19 C45.7707605,19 38.2048519,21.8400576 32.2289601,26.5934871 L35.5209015,29.7719607 C36.7584679,28.7616215 38.0765261,27.8461496 39.4639821,27.036639 L43.9829376,31.5555944 C35.9175233,35.5652241 30.375,43.8890116 30.375,53.5073246 C30.375,67.038301 41.3440237,78.0073246 54.875,78.0073246 C64.493313,78.0073246 72.8171005,72.4648013 76.8267302,64.3993871 L81.3456856,68.9183425 C80.402096,70.5356024 79.3145375,72.058572 78.1005803,73.4696814 L81.0019395,76.2702302 C85.99835,70.2191528 89,62.4601129 89,54 C89,34.6700338 73.3299662,19 54,19 Z"
-        id="Combined-Shape" fill="#DB4242"></path>
-    </clipPath>
-  </svg>
-  <svg class="clippie" viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg">
-    <clipPath id="clippie-mirror" clipPathUnits="objectBoundingBox">
-      <path
-        d="M720,0 L720,400 L0,400 L0,0 L720,0 Z M19,54 C19,73.3299662 34.6700338,89 54,89 C63.0705503,89 71.3352062,85.5495557 77.5530176,79.8896173 L74.5431111,76.9828478 C69.2224732,81.4452643 62.3625349,84.1323246 54.875,84.1323246 C37.9612795,84.1323246 24.25,70.4210451 24.25,53.5073246 C24.25,45.735787 27.1447669,38.6403585 31.9148689,33.2404706 L28.5418559,29.981479 C22.6262895,36.2493457 19,44.7011902 19,54 Z M54,19 C45.7707605,19 38.2048519,21.8400576 32.2289601,26.5934871 L35.5209015,29.7719607 C36.7584679,28.7616215 38.0765261,27.8461496 39.4639821,27.036639 L43.9829376,31.5555944 C35.9175233,35.5652241 30.375,43.8890116 30.375,53.5073246 C30.375,67.038301 41.3440237,78.0073246 54.875,78.0073246 C64.493313,78.0073246 72.8171005,72.4648013 76.8267302,64.3993871 L81.3456856,68.9183425 C80.402096,70.5356024 79.3145375,72.058572 78.1005803,73.4696814 L81.0019395,76.2702302 C85.99835,70.2191528 89,62.4601129 89,54 C89,34.6700338 73.3299662,19 54,19 Z"
-        id="Combined-Shape" fill="#DB4242"
-        transform="translate(360.000000, 200.000000) scale(-1, 1) translate(-360.000000, -200.000000) "></path>
-    </clipPath>
-  </svg>
 <%- include('./partials/foot') %>
