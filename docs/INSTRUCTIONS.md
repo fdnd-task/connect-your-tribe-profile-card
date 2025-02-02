@@ -1,12 +1,12 @@
 
 # Connect Your Tribe - Visitekaartje
-Redesign je visitekaartje met NodeJS en data uit de [whois.fdnd.nl](https://whois.fdnd.nl) API.
+Redesign je visitekaartje met NodeJS en data uit de whois API van FDND.
 
 ## Context
 Deze leertaak hoort bij sprint 7 "Connect Your Tribe". Dit is een leertaak die je individueel uitvoert.
 
 ## Briefing
-Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die te bereiken is via de API op [whois.fdnd.nl](https://whois.fdnd.nl). Met deze data ga je jouw visitekaartje redesignen.
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. De data voor het visitekaartje staat in een database die te bereiken is via de whois API van FDND. Met deze data ga je jouw visitekaartje redesignen.
 
 ## Doel van deze opdracht
 Je leert met NodeJS jouw visitekaartje server-side te maken.
