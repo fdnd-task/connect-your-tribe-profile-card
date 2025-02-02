@@ -3,34 +3,34 @@
 
 ## Sprint planning
 
-Tijdens de Sprint Planning ga je leren waar sprint 7 en het semester Data-Drive Web over gaat. 
+Tijdens de Sprint Planning ga je leren waar Sprint 7 en het semester Data-Driven Web over gaan.
 
 
 ### Aanpak
 
-Deze sprint ga je weer een visitekaartje ontwerpen en maken, net als in sprint 1. Maar dit keer met NodeJS en data uit de whois API van FDND.
+Deze sprint ga je weer een visitekaartje ontwerpen en maken, net als in Sprint 1. Maar dit keer met NodeJS en data uit de whois API van FDND.
 
-Voordat we daarmee gaan beginnen gaan we bekijken waar het semester over gaat. Wat betekent het Data-Drive web? En wat is dat eigenlijk server-side en JSON data? 
+Voordat we daarmee gaan beginnen, gaan we bekijken waar het semester over gaat. Wat betekent het Data-Driven web? En wat is dat eigenlijk, server-side en JSON data uit een API?
 
 <!-- Leren over Server-Side, JSON, Fetch en de WHOIS database -->
 
 
 ## Data-Driven Web
 
-In het eerste semester heb je responsive websites gemaakt met _statische data_, alle content heb je toen in de HTML geschreven. In het Data-Driven Web ga je dit met _dynamische data_ doen. _Dynamische data_ komt uit een database en kan bijvoorbeeld door een klant of opdrachtgever zelf aangepast worden. Teksten en plaatjes schrijf je dan niet in de HTML, maar haal je met een API uit een database. 
+In het eerste semester heb je responsive websites gemaakt met _statische data_, alle content heb je toen in de HTML geschreven. In het Data-Driven Web ga je dit met _dynamische data_ doen. _Dynamische data_ komt uit een database en kan bijvoorbeeld door een klant of opdrachtgever zelf aangepast worden. Teksten en plaatjes schrijf je dan niet in de HTML, maar haal je met een API uit een database.
 
-Bekijk op [programma.fdnd.nl](https://programma.fdnd.nl) alle sprints van semester 2. Lees de inleidende teksten op de sprint pagina's en noteer wat je interessant vindt, wat je moeilijk lijkt en/of wat je al kan. 
+Bekijk op [programma.fdnd.nl](https://programma.fdnd.nl/) alle sprints van Semester 2. Lees de inleidende teksten op de sprint pagina's en noteer wat je interessant vindt, wat je moeilijk lijkt en/of wat je al kan.
 
 ![](programma.fdnd.png)
 _Op programma.fdnd.nl staan alle sprints voor semester 2_
 
 ### Planning maken
 
-Het programma is voller dan semster 1, dat komt omdat de tweedejaars op stage zijn. Hierom kunnen eerstejaars ook 's middags bij FDND werken en leren. 
+Het programma is voller dan Semester 1, dat komt omdat de tweedejaars op stage zijn. Hierdoor kunnen eerstejaars ook 's middags bij FDND werken en leren. 
 
 Maandag- en dinsdagmiddag worden er dit semester practica aangeboden. Dit is voor beginnende en ervaren frontenders nuttig om snel NodeJS te leren, vragen te kunnen stellen en anderen te helpen.
 
-Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Wanneer ga je werken aan de JS deeltaak? Wanneer ga je 20% van je tijd bestenden aan je I Love Web?
+Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Wanneer ga je werken aan de JS fundamentals deeltaak? Wanneer ga je 20% van je tijd besteden aan je I Love Web site? Heb je gezien dat die voor Semester 2 wat uitgebreider is?
 
 
 ## JSON
