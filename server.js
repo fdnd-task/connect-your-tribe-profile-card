@@ -7,16 +7,17 @@ import { Liquid } from 'liquidjs';
 
 
 // Vul hier jouw eigen ID in (zie de instructies in de leertaak)
-const studentID = 234
+const personID = 234
 
 // Doe een fetch naar een URL op de WHOIS API, ga pas verder als de fetch gelukt is
-const response = await fetch('https://fdnd.directus.app/items/person/' + studentID)
+const personResponse = await fetch('https://fdnd.directus.app/items/person/' + personID)
 
 // Lees van de response van die fetch het JSON object in, waar we iets mee kunnen doen
-const responseJson = await response.json()
+const personResponseJSON = await personResponse.json()
 
-// Controleer de data in je console (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
-// console.log(responseJson)
+// Controleer eventueel de data in je console
+// (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
+// console.log(personResponseJSON)
 
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
@@ -37,9 +38,9 @@ app.set('views', './views')
 // Om Views weer te geven, heb je Routes nodig
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 // In je visitekaartje was dit waarschijnlijk index.html
-app.get('/', function (request, response) {
+app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-   response.render('index.liquid', {person: responseJson.data})
+   response.render('index.liquid', {person: personResponseJSON.data})
 })
 
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
@@ -51,7 +52,7 @@ app.get('/', function (request, response) {
 
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen
 // Hier doen we nu nog niets mee, maar je kunt er mee spelen als je wilt
-app.post('/', function (request, response) {
+app.post('/', async function (request, response) {
   // Je zou hier data kunnen opslaan, of veranderen, of wat je maar wilt
   // Er is nog geen afhandeling van een POST, dus stuur de bezoeker terug naar /
   response.redirect(303, '/')
