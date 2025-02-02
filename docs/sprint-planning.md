@@ -10,21 +10,19 @@ Tijdens de Sprint Planning ga je leren waar sprint 7 en het semester Data-Drive 
 
 Deze sprint ga je weer een visitekaartje ontwerpen en maken, net als in sprint 1. Maar dit keer met NodeJS en data uit de whois API van FDND.
 
-Voordat we dat gaan doen gaan we bekijken waar het semester over gaat. Wat betekent het Data-Drive web? En wat is dat eigenlijk server-side en JSON data? 
-
-
+Voordat we daarmee gaan beginnen gaan we bekijken waar het semester over gaat. Wat betekent het Data-Drive web? En wat is dat eigenlijk server-side en JSON data? 
 
 <!-- Leren over Server-Side, JSON, Fetch en de WHOIS database -->
 
 
 ## Data-Driven Web
 
-In het eerste semester heb je responsive websites gemaakt met statische data, alle content heb je toen in de HTML geschreven. In het data-driven web ga je dit met dynamische data doen. Dynamische data komt uit een database en kan bijvoorbeeld door een klant of opdrachtgever zelf aangepast worden. Teksten en plaatjes schrijf je dan niet in de HTML, maar haal je met een API uit een database. 
+In het eerste semester heb je responsive websites gemaakt met _statische data_, alle content heb je toen in de HTML geschreven. In het Data-Driven Web ga je dit met _dynamische data_ doen. _Dynamische data_ komt uit een database en kan bijvoorbeeld door een klant of opdrachtgever zelf aangepast worden. Teksten en plaatjes schrijf je dan niet in de HTML, maar haal je met een API uit een database. 
 
 Bekijk op [programma.fdnd.nl](https://programma.fdnd.nl) alle sprints van semester 2. Lees de inleidende teksten op de sprint pagina's en noteer wat je interessant vindt, wat je moeilijk lijkt en/of wat je al kan. 
 
 ![](programma.fdnd.png)
-_Op programma.fndn.nl staan alle sprints voor semester 2_
+_Op programma.fdnd.nl staan alle sprints voor semester 2_
 
 ### Planning maken
 
