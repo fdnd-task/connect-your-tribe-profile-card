@@ -83,7 +83,6 @@ Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://f
 
 - [Working with JSON @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON)
 - [Introducing JSON](https://www.json.org/json-en.html)
-
 - [Query Parameters @ Directus](https://directus.io/docs/guides/connect/query-parameters) (binnen FDND gebruiken we Directus als database)
 
 
