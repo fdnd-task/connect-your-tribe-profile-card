@@ -22,7 +22,7 @@ In het eerste semester heb je responsive websites gemaakt met _statische data_, 
 Bekijk op [programma.fdnd.nl](https://programma.fdnd.nl/) alle sprints van Semester 2. Lees de inleidende teksten op de sprint pagina's en noteer wat je interessant vindt, wat je moeilijk lijkt en/of wat je al kan.
 
 ![](programma.fdnd.png)
-_Op programma.fdnd.nl staan alle sprints voor semester 2_
+_Op programma.fdnd.nl staan alle sprints voor Semester 2_
 
 ### Planning maken
 
