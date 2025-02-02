@@ -72,23 +72,64 @@ Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jeze
 
 Mocht je willen weten welke data we nog meer in onze whois database klaar hebben staan, kijk dan naar [de volledige JSON](https://fdnd.directus.app/items/person/?fields=*,squads.squad_id.name,squads.squad_id.cohort&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222425%22}}}]}&sort=name).
 
-Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden.
+Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden. JSON wordt vaak samen met een _API_ genoemd; een _Application Programming Interface_. Een stuk software waar je met andere software tegenaan kunt praten.
 
-Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://fdnd.directus.app/items/person/?filter={%22id%22:234} — pas in de URL `234` aan naar jouw eigen ID, die je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug.
+Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://fdnd.directus.app/items/person/?filter={"id":234} — pas in de URL `234` aan naar jouw eigen ID, dat je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug.
 
-💡 Binnen FDND hebben we overigens niet alleen JSON data van studenten, maar ook van [alle sprints](https://programma.fdnd.nl/api/data-driven-web/connect-your-tribe) en [onze niveaumatrix](https://niveaumatrix.fdnd.nl/niveaumatrix.json).
+💡 Binnen FDND hebben we overigens niet alleen JSON data van studenten, maar ook van [alle sprints](https://programma.fdnd.nl/api/data-driven-web/connect-your-tribe) en [onze niveaumatrix](https://niveaumatrix.fdnd.nl/niveaumatrix.json). Misschien iets wat je dit Semester in je I Love Web site kunt verwerken?
 
 
 ### Bronnen
 
 - [Working with JSON @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON)
+- [Introducing JSON](https://www.json.org/json-en.html)
+
+- [Query Parameters @ Directus](https://directus.io/docs/guides/connect/query-parameters) (binnen FDND gebruiken we Directus als database)
 
 
+## Data fetchen
 
-## Fetch data
+Heel leuk, dat technische formaat, voor frontenders zoals wij. Normale mensen zien liever HTML in een browser. En dan het liefst nog met een likje CSS. En hooguit een beetje JavaScript voor wat interacties. _That's where we come in._ We gaan de lelijke JSON data omzetten naar mooie frontend code. Responsive, Toegankelijk, en later dit semester nog met Progressive Enhancement en Performance erbij.
 
-- ze daarna eerst met fetch() in de browser laten oefenen met dynamische json ophalen uit onze API (id 234 is een Dummy student), gewoon in een JS file met console logs
-- ze hun eigen id laten gebruiken voor zo’n fetch, zodat ze leren dat ze URLs kunnen veranderen, met bijv let studentID = 234; let url = apiUrl + studentID, nog steeds gewoon via console log
-- Daarna pas via de Whois admin hun eigen data aanpassen (ik heb op het custom json field validatie toegevoegd, dus ze kunnen hier meteen eigen data invullen)
-- via client side JS controleren of dat gelukt is (wow momentje!)
+Het mooie is dat we ook met JavaScript JSON via een URL kunnen binnenhalen, net als hoe de browser dat doet via de URL bar. In JavaScript hebben we hiervoor de _`fetch` methode_.
 
+Open je browser op een willekeurige site, en open de Console. Plak het volgende JavaScript in de Console:
+
+```js
+personResponse = await fetch('https://fdnd.directus.app/items/person/?filter={"id":234}')
+personResponseJSON = await personResponse.json()
+
+console.log(personResponseJSON)
+```
+
+Je ziet dat je browser nu dynamische data heeft geladen via onze JSON API. En die data kun je gebruiken in je code. Je kunt, als je weet welke _properties_ de data heeft, ook direct bepaalde waardes uitlezen:
+
+```js
+console.log(personResponseJSON.data)
+```
+
+Dit geeft een array terug, met daarin één persoon. Zoals je uit de JS fundamentals deeltaak weet, beginnen arrays te tellen bij 0. Als we dus het eerste item uit de array willen hebben, doen we dat zo:
+
+```js
+console.log(personResponseJSON.data[0])
+```
+
+En als je alleen wilt weten hoe deze persoon heet, kun je dat zo doen:
+
+```js
+console.log(personResponseJSON.data[0].name)
+```
+
+Probeer via de Console eens jouw eigen data via een `fetch` binnen te halen. Pas hiervoor de URL in het voorbeeld hierboven aan met jouw eigen ID. Tip: met pijltje naar boven kun je eerdere regels uit de Console terughalen en bewerken.
+
+Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whois CMS! Ga hiervoor naar https://whois.fdnd.nl/admin, vul je eigen ID in, en pas je gegevens aan. In het laatste veld kun je ook extra JSON properties toevoegen. Later deze sprint wordt duidelijk waarom.
+
+‼️ Let op: omdat we deze workshop zo laagdrempelig mogelijk willen houden, werken we niet met logins. Iedereen kan dus iedereens data aanpassen. Denk aan 1.2.3 en hou je bij het aanpassen van je _eigen gegevens_.
+
+Als je je eigen data opgeslagen hebt, test dit dan uit via de Console. Krijg je daar ook de nieuwe, dynamische data te zien? En kun je al bedenken hoe je dit in gaat zetten?
+
+Welkom bij Semester 2, het Data-Driven Web! :)
+
+### Bronnen
+
+- [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
