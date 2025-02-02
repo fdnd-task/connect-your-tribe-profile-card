@@ -24,6 +24,16 @@ Tijdens de Sprint Planning ga je leren waar sprint 7 en het semester Data-Drive 
 Leren over Server-Side, JSON, Fetch en de WHOIS database.
 
 
+## Data-Driven Web
+
+Eerst naar het hele semster kijken. Wat komt er op je af? Wat is Data-Driven Web eigenlijk?
+
+- Data, CMS, Server-side
+- Post en get?
+- Tekening laten maken op het whiteboard over server-client architectuur. 
+
+
+
 ## JSON
 - op het whiteboard naam en id uit de API verzamelen
 
@@ -46,9 +56,7 @@ Leren over Server-Side, JSON, Fetch en de WHOIS database.
 - via client side JS controleren of dat gelukt is (wow momentje!)
 
 
-## Server-Side
 
-- Tekening laten maken p het whiteboard over server-client architectuur. 
 
 <!--
 - daarna pas de Node/Express/EJS introductie en uitleg over visitekaartje maken 
