@@ -19,13 +19,13 @@ Deze leertaak wordt behandeld in de eerste week van sprint 7 met verschillende w
 - Practicum Visitekaartje met NodeJS - Maandag
 - [REST API en JSON](rest-api-en-json.md) - Woensdag
 - Paracticum REST API en JSON - Woensdag
-- [Code/Design review NodeJS Code](code-design-review-nodejs.md)
+- [Code/Design review NodeJS Code](code-design-review-nodejs.md) - Vrijdag
 
 
 ## Definition of Done
 
 Deze opdracht is done als:
 
-- [ ] Je hebt je visitekaartje gemaakt met Node
+- [ ] Je hebt je visitekaartje gemaakt met NodeJS
 - [ ] Je kaartje gebruikt gegevens uit de REST API op whois.fdnd.nl
 - [ ] Je kaartje is gepubliceerd via cyclic.sh
