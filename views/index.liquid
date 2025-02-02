@@ -1,4 +1,4 @@
-<%- include('./partials/head') %>
+{% render 'partials/head.liquid' %}
 
 <article>
   <header>
@@ -6,9 +6,9 @@
     <p>mijn naam is</p>
   </header>
 
-  <p><%= person.name %></p>
+  <p>{{ person.name }}</p>
 
   <footer></footer>
 </article>
 
-<%- include('./partials/foot') %>
+{% render 'partials/foot.liquid' %}
