@@ -33,17 +33,56 @@ Maandag- en dinsdagmiddag worden er dit semester practica aangeboden. Dit is voo
 Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Wanneer ga je werken aan de JS fundamentals deeltaak? Wanneer ga je 20% van je tijd besteden aan je I Love Web site? Heb je gezien dat die voor Semester 2 wat uitgebreider is?
 
 
-## JSON
+## Oefenen met JSON
 
-- op het whiteboard naam en id uit de API verzamelen
-- iets leren over JSON, als een van de meestgebruikte formaten van data, misschien de json validator erbij halen (ook als tegenhanger/herhaling voor html validatie)
-    
-Om te gebruiken de studenten te leren over JSON: 
-- Er is nu ook JSON voor de programma website. 
-- En er is ook een JSON voor de niveau matrix.  
+Voor FDND hebben we een database gemaakt, waar jullie allemaal in staan. Deze database bieden we via een JSON API aan. Bekijk als voorbeeld [een gesorteerde lijst met jullie namen](https://fdnd.directus.app/items/person/?fields=name&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222425%22}}}]}&sort=name). Dit is JSON data.
 
-- op het whiteboard allemaal een voorbeeld JSON object over jezelf maken, met naam en squad
-- allemaal alvast een custom property voor zichzelf bedenken, die ze toevoegen aan dat JSON voorbeeld 
+Schrijf op het whiteboard je eigen naam, en zoek in [deze gesorteerde lijst met namen, unieke ID's en GitHub profielen](https://fdnd.directus.app/items/person/?fields=id,name,github_handle&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222425%22}}}]}&sort=name) je eigen naam. Schrijf op het bord welk ID jij hebt in onze database.
+
+Je zag in het vorige voorbeeld dat JSON data meerdere _eigenschappen_ kan hebben:
+
+```json
+{
+	"name": "FDND Student",
+	"id": 234,
+	"github_handle": "fdnd"
+}
+```
+
+En dat een JSON object uit een _lijst_ (array) van meerdere objecten kan bestaan:
+
+```json
+[
+	{
+		"name": "FDND Student",
+		"id": 234,
+		"github_handle": "fdnd"
+	},
+	{
+		"name": "Iemand anders",
+		"id": 456,
+		"github_handle": null
+	}
+]
+```
+
+JSON is een standaard die veel gebruikt wordt in JavaScript. Niet geheel ontoevallig, want JSON staat voor _JavaScript Object Notation_.
+
+Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jezelf, met bijvoorbeeld je naam en squad. Voeg ook iets toe wat je zelf hebt verzonnen. Net als wat je bij je poster voor de Expo deed, maar dan niet als Custom Property in CSS, maar in JSON formaat. Welke verschillen zien je in de syntax?
+
+Mocht je willen weten welke data we nog meer in onze whois database klaar hebben staan, kijk dan naar [de volledige JSON](https://fdnd.directus.app/items/person/?fields=*,squads.squad_id.name,squads.squad_id.cohort&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222425%22}}}]}&sort=name).
+
+Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden.
+
+Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://fdnd.directus.app/items/person/?filter={%22id%22:234} — pas in de URL `234` aan naar jouw eigen ID, die je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug.
+
+💡 Binnen FDND hebben we overigens niet alleen JSON data van studenten, maar ook van [alle sprints](https://programma.fdnd.nl/api/data-driven-web/connect-your-tribe) en [onze niveaumatrix](https://niveaumatrix.fdnd.nl/niveaumatrix.json).
+
+
+### Bronnen
+
+- [Working with JSON @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON)
+
 
 
 ## Fetch data
