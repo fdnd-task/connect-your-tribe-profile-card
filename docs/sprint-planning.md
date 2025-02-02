@@ -123,7 +123,7 @@ Probeer via de Console eens jouw eigen data via een `fetch` binnen te halen. Pas
 
 Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whois CMS! Ga hiervoor naar https://whois.fdnd.nl/admin, vul je eigen ID in, en pas je gegevens aan. In het laatste veld kun je ook extra JSON properties toevoegen. Later deze sprint wordt duidelijk waarom.
 
-‼️ Let op: omdat we deze workshop zo laagdrempelig mogelijk willen houden, werken we niet met logins. Iedereen kan dus iedereens data aanpassen. Denk aan 1.2.3 en hou je bij het aanpassen van je _eigen gegevens_.
+‼️ Let op: omdat we deze workshop zo laagdrempelig mogelijk willen houden, werken we niet met logins. Iedereen kan dus iedereens data aanpassen, wat heel snel heel flauw wordt. Denk aan 1.2.3 en hou je alleen bij het aanpassen van je _eigen gegevens_.
 
 Als je je eigen data opgeslagen hebt, test dit dan uit via de Console. Krijg je daar ook de nieuwe, dynamische data te zien? En kun je al bedenken hoe je dit in gaat zetten?
 
