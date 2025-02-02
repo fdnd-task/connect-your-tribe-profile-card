@@ -12,11 +12,12 @@ body {
   place-items: center;
   font-family: Helvetica, Arial, sans-serif;
   background: silver;
+  color: #050542;
 }
 
 header {
   padding: 0.5rem;
-  background: red;
+  background: #A675F5;
   color: white;
 
   h1 {
@@ -28,7 +29,7 @@ article {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  width: 12rem;
+  width: 20rem;
   aspect-ratio: 1/1;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -48,5 +49,5 @@ article {
 
 footer {
   height: 1rem;
-  background: red;
+  background: #A675F5;
 }
