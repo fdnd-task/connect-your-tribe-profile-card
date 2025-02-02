@@ -28,11 +28,11 @@ _Op programma.fndn.nl staan alle sprints voor semester 2_
 
 ### Planning maken
 
-Het programma is voller dan semster 1, dat komt omdat de tweedejaars op stage zijn. Hierom kunnen eerstejaars meer bij FDND werken en leren. 
+Het programma is voller dan semster 1, dat komt omdat de tweedejaars op stage zijn. Hierom kunnen eerstejaars ook 's middags bij FDND werken en leren. 
 
 Maandag- en dinsdagmiddag worden er dit semester practica aangeboden. Dit is voor beginnende en ervaren frontenders nuttig om snel NodeJS te leren, vragen te kunnen stellen en anderen te helpen.
 
-Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Wanneer ga je werken aan de JS deeltaak? Wanneer ga je 20* van je tijd bestenden aan je I Love Web?
+Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Wanneer ga je werken aan de JS deeltaak? Wanneer ga je 20% van je tijd bestenden aan je I Love Web?
 
 
 ## JSON
