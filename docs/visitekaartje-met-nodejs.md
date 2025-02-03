@@ -107,9 +107,11 @@ Zoals je inmiddels wel doorhebt, draait het bij FDND om het stellen van vragen e
 Er zijn wel verkeerde antwoorden, dus pas op met vertrouwen van (verouderde) online tutorials of het blind naleven van wat ChadGPT aan elkaar verzint. Blijf kritisch.
 
 
-### Visitekaartje herontwerpen
+## Visitekaartje herontwerpen met NodeJS en een REST API
 
 Het doel en uiteindelijke resultaat van dit project is het opnieuw ontwerpen en ontwikkelen van jouw visitekaartje. Aan de ene kant leer je nieuwe technieken inzetten; je maakt jouw visitekaartje met NodeJS, Express en Liquid, gebaseerd op een REST API met JSON. En aan de andere kant maak je na een half jaar oefenen een visitekaartje wat beter laat zien wie jij bent als frontender.
+
+### Visitekaartje ontwerpen
 
 Maak een nieuw issue aan op je repository, genaamd “Redesign visitekaartje”.
 
