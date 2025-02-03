@@ -72,7 +72,7 @@ Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jeze
 
 Mocht je willen weten welke data we nog meer in onze whois database klaar hebben staan, kijk dan naar [de volledige JSON](https://fdnd.directus.app/items/person/?fields=*,squads.squad_id.name,squads.squad_id.cohort&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222425%22}}}]}&sort=name).
 
-Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden. JSON wordt vaak samen met een _API_ genoemd; een _Application Programming Interface_. Een stuk software waar je met andere software tegenaan kunt praten.
+Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden. JSON wordt vaak samen met een _API_ genoemd; een _Application Programming Interface_. Een stuk software waar je met andere software tegenaan kunt praten. En als we dat via HTTP doen, wordt dat vaak een _REST API_ (_Representational state transfer_) genoemd.
 
 Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://fdnd.directus.app/items/person/?filter={"id":234} — pas in de URL `234` aan naar jouw eigen ID, dat je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug.
 
@@ -90,7 +90,7 @@ Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://f
 
 Heel leuk, dat technische formaat, voor frontenders zoals wij. Normale mensen zien liever HTML in een browser. En dan het liefst nog met een likje CSS. En hooguit een beetje JavaScript voor wat interacties. _That's where we come in._ We gaan de lelijke JSON data omzetten naar mooie frontend code. Responsive, Toegankelijk, en later dit semester nog met Progressive Enhancement en Performance erbij.
 
-Het mooie is dat we ook met JavaScript JSON via een URL kunnen binnenhalen, net als hoe de browser dat doet via de URL bar. In JavaScript hebben we hiervoor de _`fetch` methode_.
+Het mooie is dat we ook met JavaScript JSON via een URL kunnen binnenhalen, net als hoe de browser dat doet via de URL bar. In JavaScript hebben we hiervoor de _`fetch()` methode_.
 
 Open je browser op een willekeurige site, en open de Console. Plak het volgende JavaScript in de Console:
 
@@ -119,7 +119,7 @@ En als je alleen wilt weten hoe deze persoon heet, kun je dat zo doen:
 console.log(personResponseJSON.data[0].name)
 ```
 
-Probeer via de Console eens jouw eigen data via een `fetch` binnen te halen. Pas hiervoor de URL in het voorbeeld hierboven aan met jouw eigen ID. Tip: met pijltje naar boven kun je eerdere regels uit de Console terughalen en bewerken.
+Probeer via de Console eens jouw eigen data via een `fetch()` binnen te halen. Pas hiervoor de URL in het voorbeeld hierboven aan met jouw eigen ID. Tip: met pijltje naar boven kun je eerdere regels uit de Console terughalen en bewerken.
 
 Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whois CMS! Ga hiervoor naar https://whois.fdnd.nl/admin, vul je eigen ID in, en pas je gegevens aan. In het laatste veld kun je ook extra JSON properties toevoegen. Later deze sprint wordt duidelijk waarom.
 
@@ -128,6 +128,11 @@ Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whoi
 Als je je eigen data opgeslagen hebt, test dit dan uit via de Console. Krijg je daar ook de nieuwe, dynamische data te zien? En kun je al bedenken hoe je dit in gaat zetten?
 
 Welkom bij Semester 2, het Data-Driven Web! :)
+
+Een goede frontender wil JavaScript in een _browser_ vooral inzetten voor leuke extra's. En niet voor fundamentele dingen, zoals het _tonen en opslaan van data_, waar dit semester over gaat. Daarvoor zijn browsers te onbetrouwbaar. Daarom gaan we de komende sprints aan de slag met NodeJS, waarmee we een _server_ kunnen bouwen voor onze frontend. NodeJS gebruikt onder de motorkap ook JavaScript als programmeertaal. Binnen NodeJS kunnen we ook gebruikmaken van `fetch()`, dus alles wat je net geleerd hebt, kun je straks rechtstreeks toepassen.
+
+Teken op het whiteboard een server en een browser, om te laten zien dat je klaar bent met deze instructies.
+
 
 ### Bronnen
 
