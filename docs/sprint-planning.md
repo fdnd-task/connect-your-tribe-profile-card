@@ -28,7 +28,7 @@ _Op programma.fdnd.nl staan alle sprints voor Semester 2_
 
 Het programma is voller dan Semester 1, dat komt omdat de tweedejaars op stage zijn. Hierdoor kunnen eerstejaars ook 's middags bij FDND werken en leren. 
 
-Maandag- en dinsdagmiddag worden er dit semester practica aangeboden. Dit is voor beginnende en ervaren frontenders nuttig om snel NodeJS te leren, vragen te kunnen stellen en anderen te helpen.
+Maandag- en woensdagmiddag worden er dit semester practica aangeboden. Dit is voor beginnende en ervaren frontenders nuttig om snel NodeJS te leren, vragen te kunnen stellen en anderen te helpen.
 
 Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Wanneer ga je werken aan de JS fundamentals deeltaak? Wanneer ga je 20% van je tijd besteden aan je I Love Web site? Heb je gezien dat die voor Semester 2 wat uitgebreider is?
 
