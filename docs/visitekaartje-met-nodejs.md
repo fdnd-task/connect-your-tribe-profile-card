@@ -141,7 +141,9 @@ Maak de nieuwe CSS versie van jouw visitekaartje door de `.css` bestanden aan te
 
 Voer stap voor stap de gegevens uit de FDND JSON API door in jouw visitekaartje, check na elke stap of alles nog werkt. Voeg eventueel extra data toe in de database, als jouw ontwerp dat nodig heeft. En gebruik de Liquid Template language om je HTML dynamisch te maken.
 
-Blijf stap voor stap werken, stel vragen aan klasgenoten, op Discord of aan een docent als je er niet uit komt.
+Blijf stap voor stap werken, stel vragen aan klasgenoten, op Teams, op Discord of aan een docent als je er niet uit komt.
+
+🕵️ Tip voor als je het `custom` object ook wilt gebruiken: `JSON.parse()`.
 
 Push je werk regelmatig naar GitHub, en vermeld in je commit messages het relevante issue nummer. Kijk ook eens goed naar hoe je _Partial Commits_ in kunt zetten om je werk meer te structureren.
 
@@ -151,6 +153,7 @@ Push je werk regelmatig naar GitHub, en vermeld in je commit messages het releva
 - [Liquid Filters](https://liquidjs.com/filters/overview.html)
 - [Using the Fetch API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Express documentatie](https://expressjs.com/en/5x/api.html) (geavanceerd)
+- [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 - [Partial commits in GitHub Desktop](https://github.blog/news-insights/product-news/partial-commits-in-github-for-windows/)
 - [Committing and reviewing changes to your project in GitHub Desktop](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)
 
