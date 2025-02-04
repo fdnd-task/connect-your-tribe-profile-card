@@ -143,7 +143,7 @@ Voer stap voor stap de gegevens uit de FDND JSON API door in jouw visitekaartje,
 
 Blijf stap voor stap werken, stel vragen aan klasgenoten, op Discord of aan een docent als je er niet uit komt.
 
-Push je werk regelmatig naar GitHub, en vermeld in je commit messages het relevante issue nummer. Kijk ook eens goed naar hoe je Partial Commits in kunt zetten om je werk meer te structureren.
+Push je werk regelmatig naar GitHub, en vermeld in je commit messages het relevante issue nummer. Kijk ook eens goed naar hoe je _Partial Commits_ in kunt zetten om je werk meer te structureren.
 
 #### Bronnen
 
@@ -158,3 +158,9 @@ Push je werk regelmatig naar GitHub, en vermeld in je commit messages het releva
 ### Integreren: je nieuwe werk online zetten
 
 Een ander verschil tussen Render en GitHub Pages, is dat je bij Render handmatige deploys moet maken. Nadat je je werk naar GitHub hebt gepusht, komt dat niet automatisch live. Je kunt dit wel instellen, maar dat is aan jou. Vergeet voor nu niet een handmatige deploy te doen als je je nieuwe werk aan de wereld wilt laten zien.
+
+#### Bronnen
+
+- [How Deploys Work](https://render.com/docs/deploys)
+- [Skipping an auto-deploy](https://render.com/docs/deploys#skipping-an-auto-deploy)
+- [Troubleshooting Your Deploy @ Render](https://render.com/docs/troubleshooting-deploys)
