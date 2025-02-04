@@ -143,7 +143,7 @@ Voer stap voor stap de gegevens uit de FDND JSON API door in jouw visitekaartje,
 
 Blijf stap voor stap werken, stel vragen aan klasgenoten, op Teams, op Discord of aan een docent als je er niet uit komt.
 
-🕵️ Tip voor als je het `custom` object ook wilt gebruiken: `JSON.parse()`.
+💪 Tip voor als je het `custom` object ook wilt gebruiken: `JSON.parse()`.
 
 Push je werk regelmatig naar GitHub, en vermeld in je commit messages het relevante issue nummer. Kijk ook eens goed naar hoe je _Partial Commits_ in kunt zetten om je werk meer te structureren.
 
