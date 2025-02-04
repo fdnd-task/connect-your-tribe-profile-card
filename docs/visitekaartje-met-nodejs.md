@@ -81,13 +81,19 @@ Als je je afvraagt waarom jouw naam niet meer in je kaartje staat: dat komt door
 
 Als alles zonder fouten lokaal werkt, ga je verder met het publiceren van jouw project op Internet. Omdat we met NodeJS werken, is dit iets ingewikkelder dan voorheen met GitHub Pages. Er moet namelijk een server omgeving opgestart worden. Wij gebruiken _Render_ als hostingpartij (gratis voor studenten), maar je mag natuurlijk je eigen voorkeur volgen als die anders is.
 
-1. Check nog een laatste keer of alles lokaal werkt door je server op te starten (zie hierboven hoe).
-2. *Commit* en *Push* jouw project naar GitHub.
-3. Meld je met behulp van je GitHub account aan bij [Render](https://render.com/).
-4. Klik in het Dashboard op [+ New -> Web Service](https://dashboard.render.com/web/new).
-5. Zoek de juiste repository (*connect-your-tribe-profile-card* als je niets hernoemd hebt) en volg de stappen om je project te _Deployen_. Render importeert jouw code vanaf GitHub, installeert de _dependencies_ via `npm install`, en voert `npm start` uit. Deze _deploy_ kan even duren (net als dat het bij GitHub Pages soms even duurde voordat jouw wijzigingen online kwamen).
-6. Er wordt een unieke URL voor jouw project door Render gegenereerd.
-7. Open die URL in je browser, check of alles werkt en voer daarna deze URL in bij jouw repository op GitHub.
+Check nog een laatste keer of alles lokaal werkt door je server op te starten (zie hierboven hoe).
+
+*Commit* en *Push* jouw project naar GitHub.
+
+Meld je met behulp van je GitHub account aan bij [Render](https://render.com/).
+
+Klik in het Dashboard op [+ New -> Web Service](https://dashboard.render.com/web/new).
+
+Zoek de juiste repository (*connect-your-tribe-profile-card* als je niets hernoemd hebt) en volg de stappen om je project te _Deployen_. Render importeert jouw code vanaf GitHub, installeert de _dependencies_ via `npm install`, en voert `npm start` uit. Deze _deploy_ kan even duren (net als dat het bij GitHub Pages soms even duurde voordat jouw wijzigingen online kwamen).
+
+Er wordt een unieke URL voor jouw project door Render gegenereerd.
+
+Open die URL in je browser, check of alles werkt en voer daarna deze URL in bij jouw repository op GitHub.
 
 Omdat het hosten van NodeJS projecten complexer en duurder is dan het hosten van statische projecten, en we de gratis variant van Render gebruiken, “pauzeert” Render soms na een tijdje jouw project. Het kan daarna even duren voordat je NodeJS project weer opgestart is, soms wel 60 seconden.
 
