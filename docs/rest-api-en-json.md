@@ -107,6 +107,8 @@ Als je de werkende URL hebt, hoeven we die alleen nog in onze code te verwerken.
 
 Naast dat je eigen data wordt opgehaald en mee wordt gestuurd naar de view, willen we nu dus wat meer data ophalen uit onze API, met een extra `fetch`. Dit ophalen van data kan op meerdere plekken: zoals nu, tijdens het starten van de server, maar het kan ook op het moment _net voordat_ de view wordt gerenderd. Dus op het moment dat iemand de pagina bezoekt. Hoe en waar je dat doet, mag je zelf weten. Er zitten voor- en nadelen aan beide plekken. Zoals met wel meer: _It Depends_. In dit geval hebben we deze gegevens alleen nodig op `/oefenen`, niet op de homepage.
 
+...
+
 <!--
 Uittypen als je helder bent morgenochtend :)
 
