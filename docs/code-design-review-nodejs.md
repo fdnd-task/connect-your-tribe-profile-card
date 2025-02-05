@@ -8,3 +8,18 @@ Deze week heb je een visitekaartje ontworpen en gemaakt met NodeJS en een REST A
 
 ### Aanpak
 
+<!-- 
+
+In groepjes bij docenten zitten. 
+Via het issue kijken naar de vorderingen. 
+
+
+
+Wat is al gelukt? Compliment in issue (?)
+
+Al iets gedaan dat bij 💪 stond? Delen met squad zodat ze daar uitleg kunnen krijgen
+
+Wat is nog niet gelukt? Meegeven wat nodig is om nu te kunnen > in issue (?)
+
+
+-->
