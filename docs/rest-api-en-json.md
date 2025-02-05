@@ -91,9 +91,9 @@ https://fdnd.directus.app/items/person/234
 https://fdnd.directus.app/items/person/?filter={"id":234}
 ```
 
-Stel dat je drie andere studenten aan je tafel hebt zitten, dan zou je drie keer een andere URL kunnen binnenhalen, drie extra variabelen aan kunnen maken, en drie extra objecten mee kunnen geven aan de view. Maar als er dan iemand even lunch gaat halen, of bij je komt zitten voor een code review, moet je behoorlijk wat code aanpassen. Dan hadden we dit semester net zo goed niet Data-Driven kunnen noemen.
+Stel dat je drie andere studenten aan je tafel hebt zitten, dan zou je drie keer een andere URL met JSON kunnen binnenhalen, drie extra variabelen aan kunnen maken (`person1`, `person2` en `person3`), drie extra objecten mee kunnen geven aan de view, en drie `<article>` tags met elk een eigen `{{ person1.name }}`, `{{ person2.name }}` en `{{ person3.name }}` kunnen schrijven. Maar als er dan iemand even lunch gaat halen, of bij je komt zitten voor een code review, moet je behoorlijk wat code aanpassen. Niet DRY, niet onderhoudbaar, niet dynamisch. Dan hadden we dit semester net zo goed niet Data-Driven kunnen noemen.
 
-In onze Directus API kun je ook op deze manier data filteren:
+Dat kan gelukkig slimmer. In onze Directus API kun je ook op deze manier data filteren:
 
 ```
 https://fdnd.directus.app/items/person?filter={"_or":[{"id":65},{"id":67}]}
@@ -101,11 +101,11 @@ https://fdnd.directus.app/items/person?filter={"_or":[{"id":65},{"id":67}]}
 
 Deze URL geeft personen terug, die het ID `65` _of_ `67` hebben. Dat zijn er twee in dit geval. Hm, interessant. Heb je al door wat hier gebeurt? `filter` in deze URL is een _query parameter_, en je kunt hierin JSON meegeven, waarmee je specifiekere filters op de data kunt maken.
 
-Pas met je kennis van JSON de URL in je adresbalk zo aan, dat je de JSON data van de mensen om je heen krijgt te zien. Niet schrikken als je wat foutmeldingen van Directus krijgt; waarschijnlijk heb je dan net een komma, quote, bracket of curly verkeerd staan. Gewoon doorgaan met klooien en pielen.
+Pas met je kennis van JSON de URL in je adresbalk zo aan, dat je de JSON data van de mensen om je heen krijgt te zien. Als dat er drie zijn, voeg dan drie ID's toe in de _array_. Niet schrikken als je wat foutmeldingen van Directus krijgt; waarschijnlijk heb je dan net een komma, quote, bracket of curly verkeerd staan. Of iets anders. Gewoon doorgaan met klooien en pielen. En hulp vragen als het niet lukt.
 
 Als je de werkende URL hebt, hoeven we die alleen nog in onze code te verwerken.
 
-Naast dat je eigen data wordt opgehaald en mee wordt gestuurd naar de view, willen we nu dus wat meer data ophalen uit onze API, met een extra `fetch`. Dit ophalen van data kan op meerdere plekken: zoals nu, tijdens het starten van de server, maar het kan ook op het moment _net voordat_ de view wordt gerenderd. Dus op het moment dat iemand de pagina bezoekt. Hoe en waar je dat doet, mag je zelf weten. Er zitten voor- en nadelen aan beide plekken. Zoals met wel meer: _It Depends_. In dit geval, hebben we deze gegevens alleen nodig op `/oefenen`, niet op de homepage.
+Naast dat je eigen data wordt opgehaald en mee wordt gestuurd naar de view, willen we nu dus wat meer data ophalen uit onze API, met een extra `fetch`. Dit ophalen van data kan op meerdere plekken: zoals nu, tijdens het starten van de server, maar het kan ook op het moment _net voordat_ de view wordt gerenderd. Dus op het moment dat iemand de pagina bezoekt. Hoe en waar je dat doet, mag je zelf weten. Er zitten voor- en nadelen aan beide plekken. Zoals met wel meer: _It Depends_. In dit geval hebben we deze gegevens alleen nodig op `/oefenen`, niet op de homepage.
 
 <!--
 Uittypen als je helder bent morgenochtend :)
