@@ -13,9 +13,12 @@ Vanochtend gaan we oefenen met het nieuwe gereedschap dat we tot onze beschikkin
 Hiermee leren we wat meer over _Routing_, _Views_, _Express_, _Liquid_, _JSON_ en onze _API_ (Directus).
 
 
-### Oefenen met Routes en Views
+## Oefenen met Routes en Views
 
 In Semester 1 kon je een nieuwe pagina toevoegen door een nieuw HTML bestand aan te maken. In Express werkt dit net even anders. We moeten hiervoor een nieuwe _Route_ aanmaken in onze Express server.
+
+Je gaat eerst een nieuwe pagina maken in jouw nodeJS project:
+![](oefenen-met-routes-en-views.png)
 
 Routes zijn de stukjes achter de URL waar je site op draait. Een nieuwe route toevoegen, doe je in `server.js`.
 
@@ -29,12 +32,15 @@ Maak daarna in `server.js` een extra route aan voor de URL `/oefenen`, en zorg d
 
 (Her)start je lokale server door `npm start` uit te voeren; voor elke wijziging in `server.js` moet je dit doen. Open http://localhost:8000/oefenen in je browser, en controleer of je een lege pagina krijgt. Als je een foutmelding krijgt, laat het dan even weten :)
 
-#### Bronnen
+### Bronnen
 
 - [Routes in Express, met `app.get(..., ...)`](https://expressjs.com/en/5x/api.html#app.get.method)
 
 
-### Spelen met Liquid filters
+## Spelen met Liquid filters
+
+Voor deze opdracht ga je je naam toevoegen aan de nieuwe view en de datum van vandaag tonen:
+![](spelen-met-liquid-filters.png)
 
 Voeg aan `oefenen.liquid` de volgende code toe:
 
@@ -65,16 +71,21 @@ Als dat gelukt is, en je hebt in de whois database je eigen geboortedatum ingevu
 
 💪 Had je je `custom` property (niet te verwarren met CSS Custom Properties) nog niet gebruikt, maar wil je dat wel graag? Dan zul je met `JSON.parse()` aan de slag moeten. Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. En teken er een bosje peterselie bij, zodat anderen je weten te vinden. (Parsley? Nee? Niemand into woordgrappen op dit tijdstip? I'll get my coat..)
 
-#### Bronnen
+### Bronnen
 
 - [Liquid date filter](https://liquidjs.com/filters/date.html)
 - [Liquid json filter](https://liquidjs.com/filters/json.html)
 - [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 
-### 💪 Extra data van anderen uit de API halen
+## 💪 Extra data van anderen uit de API halen
 
 Als je hoofd nu duizelt, en je vooral weer met de HTML en CSS van je visitekaartje aan de gang wilt gaan, helemaal prima. Wil je wel nog een uitdaging, en alvast een voorbereiding op wat we komende week gaan doen, lees dan rustig verder.
+
+In de nieuwe view ga je ook de namen van je tafelgenoten tonen:
+![](extra-data-van-anderen-uit-de-api-halen.png)
+
+
 
 Voeg in je view de volgende code toe:
 
@@ -124,7 +135,7 @@ daarna voor die personen geboortedatum ook toevoegen, en dan zien ze hopelijk he
 
 -->
 
-#### Bronnen
+### Bronnen
 
 - [Directus Query Parameters: filter](https://directus.io/docs/guides/connect/query-parameters#filter)
 - [Directus Filter Rules](https://directus.io/docs/guides/connect/filter-rules)
