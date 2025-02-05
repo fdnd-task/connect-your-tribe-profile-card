@@ -8,16 +8,16 @@ Over het maken van je visitekaart met JSON, NodeJS, Express en Liquid.
 
 ### Aanpak
 
-Vanochtend gaan we oefenen met het nieuwe gereedschap dat we tot onze beschikking hebben. We gaan samen een nieuwe pagina bouwen, waarop we als herhaling onze eigen naam gaan tonen. En we gaan de datum van vandaag erbij zetten, omdat het kan. Vervolgens maken we een overzicht van wie er op dit moment bij je aan tafel zit. Niet met statische HTML, zoals in Semester 1, maar met dynamische data.
+Vanochtend gaan we oefenen met het nieuwe gereedschap dat we tot onze beschikking hebben. We gaan samen een nieuwe pagina bouwen, waarop we als herhaling onze eigen naam gaan tonen. En we gaan de datum van vandaag erbij zetten, omdat we daarmee leren hoe we variabelen kunnen aanpassen. Vervolgens gaan we proberen alle data uit de API te gebruiken, zodat we dit kunnen toepassen op ons visitekaartje.
 
-Hiermee leren we wat meer over _Routing_, _Views_, _Express_, _Liquid_, _JSON_ en onze _API_ (Directus).
+Hiermee leren we wat meer over _Routing_, _Views_, _Express_, _Liquid_, _JSON_ en onze _API_.
 
 
 ## Oefenen met Routes en Views
 
 In Semester 1 kon je een nieuwe pagina toevoegen door een nieuw HTML bestand aan te maken. In Express werkt dit net even anders. We moeten hiervoor een nieuwe _Route_ aanmaken in onze Express server.
 
-Je gaat eerst een nieuwe pagina maken in jouw nodeJS project:
+Je gaat eerst een nieuwe pagina maken in jouw NodeJS project:
 ![](oefenen-met-routes-en-views.png)
 
 Routes zijn de stukjes achter de URL waar je site op draait. Een nieuwe route toevoegen, doe je in `server.js`.
@@ -67,78 +67,30 @@ Als dat gelukt is, en je hebt in de whois database je eigen geboortedatum ingevu
 
 🐛 Tip: Als je niet meer weet hoe die _property_ van het `person` object heet (was het nou `birthdate` of `birth_date`?), zet `{{ person | json }}` in je code, en bekijk het antwoord in je pagina.
 
-💡 Pro-tip: zorg dat je tijdens het bouwen en debuggen standaard ergens op je pagina een fixed positioned `<details>` element hebt, met daarin een `<pre>` element en `{{ person | json:4 }}` — dan kun je altijd even spieken in je data.
+💡 Pro-tip: zorg dat je tijdens het bouwen en debuggen standaard ergens op je pagina een custom made fixed positioned `<details><summary>Data</summary><pre>{{ person | json:4 }}</pre></summary>` element hebt—dan kun je altijd even spieken in je data. Haal die alleen wel weg voordat je je werk live zet :)
 
-💪 Had je je `custom` property (niet te verwarren met CSS Custom Properties) nog niet gebruikt, maar wil je dat wel graag? Dan zul je met `JSON.parse()` aan de slag moeten. Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. En teken er een bosje peterselie bij, zodat anderen je weten te vinden. (Parsley? Nee? Niemand into woordgrappen op dit tijdstip? I'll get my coat..)
 
 ### Bronnen
 
+- [The Liquid Template Language](https://liquidjs.com/tutorials/intro-to-liquid.html)
+- [Liquid Filters](https://liquidjs.com/filters/overview.html)
 - [Liquid date filter](https://liquidjs.com/filters/date.html)
 - [Liquid json filter](https://liquidjs.com/filters/json.html)
-- [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 
-## 💪 Extra data van anderen uit de API halen
+## 💪 Custom data gebruiken en elkaar helpen
 
-Als je hoofd nu duizelt, en je vooral weer met de HTML en CSS van je visitekaartje aan de gang wilt gaan, helemaal prima. Wil je wel nog een uitdaging, en alvast een voorbereiding op wat we komende week gaan doen, lees dan rustig verder.
+Had je je `custom` property (niet te verwarren met CSS Custom Properties) nog niet gebruikt maandag, maar wil je dat wel graag? Hierin zit namelijk nog meer data, die je waarschijnlijk in je visitekaartje wilt laten zien.
 
-In de nieuwe view ga je ook de namen van je tafelgenoten tonen:
-![](extra-data-van-anderen-uit-de-api-halen.png)
+We gaan proberen de `custom` property uit te lezen:
+![](custom-data.png)
 
+De gegevens in de `custom` property zijn door Directus opgeslagen als _String_, en komen ook zo terug als je de data ophaalt. Voordat je de `personResponseJSON.data` meegeeft aan de view, en de verschillende properties van de `custom` property kunt gebruiken, moet deze nog omgezet worden naar een object. Je zult hiervoor met `JSON.parse()` aan de slag moeten, en de `custom` property string moeten overschrijven met een object.
 
+Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. En teken er een bosje peterselie bij, zodat anderen je weten te vinden.
 
-Voeg in je view de volgende code toe:
-
-```liquid
-<h2>Bij mij aan tafel zitten nu:</h2>
-```
-
-Vraag aan de mensen die nu bij je aan tafel zitten even hun whois ID's, en schrijf die ergens op. We reduceren je tafelgenoten even tot een nummer. Tijdelijk.
-
-Je hebt bij het ophalen van je eigen gegevens gezien dat dat via deze URLs kan (als je je eigen ID erin zet):
-
-```
-https://fdnd.directus.app/items/person/234
-https://fdnd.directus.app/items/person/?filter={"id":234}
-```
-
-Stel dat je drie andere studenten aan je tafel hebt zitten, dan zou je drie keer een andere URL met JSON kunnen binnenhalen, drie extra variabelen aan kunnen maken (`person1`, `person2` en `person3`), drie extra objecten mee kunnen geven aan de view, en drie `<article>` tags met elk een eigen `{{ person1.name }}`, `{{ person2.name }}` en `{{ person3.name }}` kunnen schrijven. Maar als er dan iemand even lunch gaat halen, of bij je komt zitten voor een code review, moet je behoorlijk wat code aanpassen. Niet DRY, niet onderhoudbaar, niet dynamisch. Dan hadden we dit semester net zo goed niet Data-Driven kunnen noemen.
-
-Dat kan gelukkig slimmer. In onze Directus API kun je ook op deze manier data filteren:
-
-```
-https://fdnd.directus.app/items/person?filter={"_or":[{"id":65},{"id":67}]}
-```
-
-Deze URL geeft personen terug, die het ID `65` _of_ `67` hebben. Dat zijn er twee in dit geval. Hm, interessant. Heb je al door wat hier gebeurt? `filter` in deze URL is een _query parameter_, en je kunt hierin JSON meegeven, waarmee je specifiekere filters op de data kunt maken.
-
-Pas met je kennis van JSON de URL in je adresbalk zo aan, dat je de JSON data van de mensen om je heen krijgt te zien. Als dat er drie zijn, voeg dan drie ID's toe in de _array_. Niet schrikken als je wat foutmeldingen van Directus krijgt; waarschijnlijk heb je dan net een komma, quote, bracket of curly verkeerd staan. Of iets anders. Gewoon doorgaan met klooien en pielen. En hulp vragen als het niet lukt.
-
-Als je de werkende URL hebt, hoeven we die alleen nog in onze code te verwerken.
-
-Naast dat je eigen data wordt opgehaald en mee wordt gestuurd naar de view, willen we nu dus wat meer data ophalen uit onze API, met een extra `fetch`. Dit ophalen van data kan op meerdere plekken: zoals nu, tijdens het starten van de server, maar het kan ook op het moment _net voordat_ de view wordt gerenderd. Dus op het moment dat iemand de pagina bezoekt. Hoe en waar je dat doet, mag je zelf weten. Er zitten voor- en nadelen aan beide plekken. Zoals met wel meer: _It Depends_. In dit geval hebben we deze gegevens alleen nodig op `/oefenen`, niet op de homepage.
-
-...
-
-<!--
-Uittypen als je helder bent morgenochtend :)
-
-Voer in de callback function van de `/oefenen` route, _voor_ de `response.render(...)` een extra `fetch` en 
-
-Geef die nieuwe data als extra object mee aan de view.
-
-Voeg in..
-
-
-in de view een loop maken van iedereen die aan je tafel zit, inclusief hun naam => al iets meer advanced, maar dan zien ze pas de kracht van dynamische data
-daarna voor die personen geboortedatum ook toevoegen, en dan zien ze hopelijk het nut van templates in (1 aanpassing -> 3 extra <p>'tjes)
-
--->
+Ga hierna verder met je eigen visitekaartje verbeteren. Probeer alle content uit de whois API te halen, door het `custom` veld te gebruiken. Vergeet niet wat je in Sprint 6 hebt gedaan rondom gestructureerd werken volgens de development lifecycle; probeer je werk op te delen in verschillende taken/issues. Analyseer wat je per taak moet doen, maak wat ontwerpen en schetsen, maak je code, integreer het met Render en test je werk. En vraag regelmatig om feedback. Zet 'm op!
 
 ### Bronnen
 
-- [Directus Query Parameters: filter](https://directus.io/docs/guides/connect/query-parameters#filter)
-- [Directus Filter Rules](https://directus.io/docs/guides/connect/filter-rules)
-- [Liquid For loop](https://liquidjs.com/tags/for.html)
-
-
+- [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
