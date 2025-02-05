@@ -67,7 +67,7 @@ Als dat gelukt is, en je hebt in de whois database je eigen geboortedatum ingevu
 
 🐛 Tip: Als je niet meer weet hoe die _property_ van het `person` object heet (was het nou `birthdate` of `birth_date`?), zet `{{ person | json }}` in je code, en bekijk het antwoord in je pagina.
 
-💡 Pro-tip: zorg dat je tijdens het bouwen en debuggen standaard ergens op je pagina een custom made fixed positioned `<details><summary>Data</summary><pre>{{ person | json:4 }}</pre></summary>` element hebt—dan kun je altijd even spieken in je data. Haal die alleen wel weg voordat je je werk live zet :)
+💡 Pro-tip: zorg dat je tijdens het bouwen en debuggen standaard ergens op je pagina een custom made fixed positioned `<details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>` element hebt—dan kun je altijd even spieken in je data. Haal die alleen wel weg voordat je je werk live zet :)
 
 
 ### Bronnen
