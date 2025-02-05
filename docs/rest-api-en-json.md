@@ -21,7 +21,7 @@ Routes zijn de stukjes achter de URL waar je site op draait. Een nieuwe route to
 
 Zoek in dat bestand op waar de route naar je visitekaartje staat (waarschijnlijk is dat nog `/`, op regel 41, als je alleen je `personID` aangepast hebt tot nu toe).
 
-Routes kun je koppelen aan _Views_, door een _callback function_. (Van een functie zou je door het volgen van de JS fundamentals deeltaak in Sprint 5 en 6 inmiddels moeten weten wat het is, en zo niet, dan wordt het tijd om _dagelijks_ aan die taak te gaan werken.) Elke keer dat een bezoeker een bepaalde route bezoekt, wordt de callback function uitgevoerd. In die functie wordt een view _gerenderd_ (niet te verwarren met Render, waar we de site hosten—sorry voor alle overlappende termen in dit vakgebied, maar over een paar jaar weet je niet beter!). In dit geval wordt op de root URL (`/`) de view `index.liquid` gerenderd. Aan die view wordt een object meegegeven, met de data uit de API.
+Routes kun je koppelen aan _Views_, door een _callback function_. Elke keer dat een bezoeker een bepaalde route bezoekt, wordt de callback function uitgevoerd. In die functie wordt een view _gerenderd_ (niet te verwarren met Render, waar we de site hosten). In dit geval wordt op de root URL `/` de view `index.liquid` gerenderd. Aan die view wordt een object meegegeven, met de data uit de API, zodat die gegevens ook in die view gebruikt kunnen worden. Als je geen data meegeeft aan de view, kan deze die data ook niet tonen.
 
 Maak eerst een nieuw leeg bestand aan in de map `views`, genaamd `oefenen.liquid`.
 
@@ -43,7 +43,7 @@ Voeg aan `oefenen.liquid` de volgende code toe:
 <p>Ik ben dus {{ person.name }}</p>
 ```
 
-Controleer of je ook op deze pagina je eigen naam te zien krijgt, door de pagina te verversen (voor een wijziging in de frontend code hoef je de server niet opnieuw op te starten).
+Controleer of je ook op deze pagina je eigen naam te zien krijgt, door de pagina te verversen (bij een wijziging in de `views` of `public` map hoef je de server niet opnieuw op te starten).
 
 Krijg je niet je naam te zien, dan heb je waarschijnlijk wat van de stappen van [maandag](visitekaartje-met-nodejs.md) gemist. Laat het even weten als dit je nog niet gelukt is. We zijn er om je te helpen een goede frontender te worden.
 
@@ -57,13 +57,13 @@ En ververs de pagina. Waarschijnlijk niet helemaal wat je gehoopt had, en waarsc
 
 Zorg er met de documentatie van het Liquid `date` _filter_ voor dat de datum in een iets vriendelijke formaat getoond wordt. Niet door de datum keihard in je HTML neer te zetten, maar door de dynamische datum om te zetten naar wat anders.
 
-Als dat gelukt is, en je hebt in de whois database je eigen geboortedatum ingevuld, laat die dan ook zien op deze pagina. (Heb je geen idee waar dit over gaat, volg dan nog even de [Sprint planning van maandag](sprint-planning.md).) Gebruik het `date` filter ook om deze gebruiksvriendelijk neer te zetten.
+Als dat gelukt is, en je hebt in de whois database je eigen geboortedatum ingevuld, laat die dan ook zien op deze pagina. (Heb je geen idee waar die whois database over gaat, volg dan nog even de [Sprint planning van maandag](sprint-planning.md).) Kun je die datum ook beter leesbaar tonen?
 
-Als je niet meer weet hoe die _property_ van het `person` object heet (was het nou `birthdate` of `birth_date`?), zet `{{ person | json }}` in je code, en bekijk het antwoord in je pagina.
-
-💪 Had je je `custom` property nog niet gebruikt, maar wil je dat wel graag? Dan zul je met `JSON.parse()` aan de slag moeten. Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad.
+🐛 Tip: Als je niet meer weet hoe die _property_ van het `person` object heet (was het nou `birthdate` of `birth_date`?), zet `{{ person | json }}` in je code, en bekijk het antwoord in je pagina.
 
 💡 Pro-tip: zorg dat je tijdens het bouwen en debuggen standaard ergens op je pagina een fixed positioned `<details>` element hebt, met daarin een `<pre>` element en `{{ person | json:4 }}` — dan kun je altijd even spieken in je data.
+
+💪 Had je je `custom` property (niet te verwarren met CSS Custom Properties—sorry!) nog niet gebruikt, maar wil je dat wel graag? Dan zul je met `JSON.parse()` aan de slag moeten. Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. En teken er een bosje peterselie bij, zodat anderen je weten te vinden. (Parsley? Nee? Niemand into woordgrappen op dit tijdstip? I'll get my coat..)
 
 #### Bronnen
 
@@ -72,15 +72,60 @@ Als je niet meer weet hoe die _property_ van het `person` object heet (was het n
 - [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 
-### 💪 Extra data uit de API halen
+### 💪 Extra data van anderen uit de API halen
 
-Als je hoofd nu duizelt, en je vooral weer met de HTML en CSS van je visitekaartje aan de gang wilt gaan, helemaal prima.
+Als je hoofd nu duizelt, en je vooral weer met de HTML en CSS van je visitekaartje aan de gang wilt gaan, helemaal prima. Wil je wel nog een uitdaging, en alvast een voorbereiding op wat we komende week gaan doen, lees dan rustig verder.
+
+Voeg in je view de volgende code toe:
+
+```liquid
+<h2>Bij mij aan tafel zitten nu:</h2>
+```
+
+Vraag aan de mensen die nu bij je aan tafel zitten even hun whois ID's, en schrijf die ergens op. We reduceren je tafelgenoten even tot een nummer. Tijdelijk.
+
+Je hebt bij het ophalen van je eigen gegevens gezien dat dat via deze URLs kan (als je je eigen ID erin zet):
+
+```
+https://fdnd.directus.app/items/person/234
+https://fdnd.directus.app/items/person/?filter={"id":234}
+```
+
+Stel dat je drie andere studenten aan je tafel hebt zitten, dan zou je drie keer een andere URL kunnen binnenhalen, drie extra variabelen aan kunnen maken, en drie extra objecten mee kunnen geven aan de view. Maar als er dan iemand even lunch gaat halen, of bij je komt zitten voor een code review, moet je behoorlijk wat code aanpassen. Dan hadden we dit semester net zo goed niet Data-Driven kunnen noemen.
+
+In onze Directus API kun je ook op deze manier data filteren:
+
+```
+https://fdnd.directus.app/items/person?filter={"_or":[{"id":65},{"id":67}]}
+```
+
+Deze URL geeft personen terug, die het ID `65` _of_ `67` hebben. Dat zijn er twee in dit geval. Hm, interessant. Heb je al door wat hier gebeurt? `filter` in deze URL is een _query parameter_, en je kunt hierin JSON meegeven, waarmee je specifiekere filters op de data kunt maken.
+
+Pas met je kennis van JSON de URL in je adresbalk zo aan, dat je de JSON data van de mensen om je heen krijgt te zien. Niet schrikken als je wat foutmeldingen van Directus krijgt; waarschijnlijk heb je dan net een komma, quote, bracket of curly verkeerd staan. Gewoon doorgaan met klooien en pielen.
+
+Als je de werkende URL hebt, hoeven we die alleen nog in onze code te verwerken.
+
+Naast dat je eigen data wordt opgehaald en mee wordt gestuurd naar de view, willen we nu dus wat meer data ophalen uit onze API, met een extra `fetch`. Dit ophalen van data kan op meerdere plekken: zoals nu, tijdens het starten van de server, maar het kan ook op het moment _net voordat_ de view wordt gerenderd. Dus op het moment dat iemand de pagina bezoekt. Hoe en waar je dat doet, mag je zelf weten. Er zitten voor- en nadelen aan beide plekken. Zoals met wel meer: _It Depends_. In dit geval, hebben we deze gegevens alleen nodig op `/oefenen`, niet op de homepage.
+
 <!--
-in de view een heading maken: "<h2>Bij mij aan tafel zitten nu:</h2>"
-in die nieuwe route de info van de mensen aan je tafel fetchen, id's even met elkaar uitwisselen dus => concept van de API herhalen, en JSON, uitstapje naar filters in Directus misschien (of al te geavanceerd?)
-https://fdnd.directus.app/items/person?filter={"_or":[{"id":67},{"id":65}]}
+Uittypen als je helder bent morgenochtend :)
+
+Voer in de callback function van de `/oefenen` route, _voor_ de `response.render(...)` een extra `fetch` en 
+
+Geef die nieuwe data als extra object mee aan de view.
+
+Voeg in..
+
 
 in de view een loop maken van iedereen die aan je tafel zit, inclusief hun naam => al iets meer advanced, maar dan zien ze pas de kracht van dynamische data
 daarna voor die personen geboortedatum ook toevoegen, en dan zien ze hopelijk het nut van templates in (1 aanpassing -> 3 extra <p>'tjes)
-Eigenlijk ook al een beetje ter voorbereiding op de squad page.
+
 -->
+
+#### Bronnen
+
+- [Directus Query Parameters: filter](https://directus.io/docs/guides/connect/query-parameters#filter)
+- [Directus Filter Rules](https://directus.io/docs/guides/connect/filter-rules)
+- [Liquid For loop](https://liquidjs.com/tags/for.html)
+
+
