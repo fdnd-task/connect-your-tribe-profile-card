@@ -89,7 +89,7 @@ De gegevens in de `custom` property zijn door Directus opgeslagen als _String_, 
 
 Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. En teken er een bosje peterselie bij, zodat anderen je weten te vinden.
 
-Ga hierna verder met je eigen visitekaartje verbeteren. Probeer alle content uit de whois API te halen, door het `custom` veld te gebruiken. Vergeet niet wat je in Sprint 6 hebt gedaan rondom gestructureerd werken volgens de development lifecycle; probeer je werk op te delen in verschillende taken/issues. Analyseer wat je per taak moet doen, maak wat ontwerpen en schetsen, maak je code, integreer het met Render en test je werk. En vraag regelmatig om feedback. Zet 'm op!
+Ga hierna verder met je eigen visitekaartje verbeteren. Probeer alle content uit de whois API te halen, door het `custom` veld te gebruiken. Vergeet niet wat je in Sprint 6 hebt gedaan rondom gestructureerd werken volgens de development lifecycle; probeer je werk op te delen in verschillende taken/issues. Analyseer wat je per taak moet doen, maak wat ontwerpen en schetsen, klop wat code, integreer het met Render en test je werk. En vraag regelmatig om feedback. Zet 'm op!
 
 ### Bronnen
 
