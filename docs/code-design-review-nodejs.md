@@ -3,7 +3,7 @@
 
 ## Code/Design-review over de NodeJS-code van je visitekaartje
 
-Deze week heb je een visitekaartje ontworpen en gemaakt met NodeJS en een REST API. 
+Deze week heb je een visitekaartje ontworpen en gemaakt met NodeJS, een REST API en Liquid. 
 Is het gelukt? Cool he? 🧗‍♀️🏔️⛷️
 
 ### Aanpak
