@@ -41,21 +41,29 @@ Als je een review gaat doen, schrijf dan jouw naam bij de naam die je gaat revie
 ### Hoe schrijf je een nette issue? 
 Als je iemand feedback geeft, is het belangrijk om duidelijk te beschrijven wat het probleem is en hoe het op te lossen is. En een beetje netjes, respectvol en in foutloos Nederlands kan ook geen kwaad. We zijn hier professionals.
 
-Zo schrijf je een net issue:
+Zo schrijf je nette feedback:
 
-![](hoe-schrijf-je-een-nette-issue.png)
+![](hoe-schrijf-je-nette-feedback.png)
 
-1. Een beschrijvende titel
-2. Een link naar de betreffende code regel(s)
-3. Een uitleg van wat jouw issue is
-4. Een uitleg van een mogelijke oplossing
-5. Een link naar eventuele bronnen
+1. Een link naar de betreffende code regel(s)
+2. Een uitleg van wat jouw feedback is
+3. Een uitleg van een mogelijke oplossing
+4. Een link naar eventuele bronnen
 
 ### Review
-- Check de HTML met de W3C Validator. Schrijf een issue als je een probleem tegenkomt.
-- Bekijk alle HTML elementen m.b.v. MDN HTML elements reference. Schrijf een issue als je suggesties hebt voor een ander element.
-- Check de CSS, schrijf issues als je iets ziet waar je de ander mee kan helpen. Neem per review iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd, en schrijf dit in je Learning Journal.
-- Check de JS, schrijf zo nodig een issue, en neem iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd. Noteer dit in je Learning Journal (daar kan je dan zondag lekker mee gaan pielen 🤠)
+
+Doe de review via het issue "Redesign visitekaartje" 
+
+- Check eerst of de nieuwste code live staat, vraag dit even aan de persoon die je gaat reviewen
+- Check de HTML met de W3C Validator. Schrijf een _comment_ bij het issue als je een probleem tegenkomt. Het is handig om een checklist te gebruiken als je 
+    - [] meerdere
+    - [] feedback 
+    - [] punten
+    
+    hebt
+- Bekijk alle HTML elementen m.b.v. MDN HTML elements reference. Schrijf een nieuwe comment bij het issue als je suggesties hebt voor een ander element.
+- Check de CSS, schrijf een comment als je iets ziet waar je de ander mee kan helpen. Neem per review iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd, en schrijf dit in je Learning Journal.
+- Check de JS, schrijf zo nodig een comment, en neem iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd. Noteer dit in je Learning Journal (daar kan je dan zondag lekker mee gaan pielen 🤠)
 
 
 
