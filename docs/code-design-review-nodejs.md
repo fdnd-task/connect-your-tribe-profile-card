@@ -38,7 +38,7 @@ Vandaag doe je een code review bij minimaal 3 studenten uit een andere squad. Sc
 
 Als je een review gaat doen, schrijf dan jouw naam bij de naam die je gaat reviewen. Aan het eind van de ochtend staan daar dus 3 namen! Staan er geen 3 namen op jouw whiteboard? Tsk tsk tsk ... Trek dan een collega aan de mouw!
 
-### Hoe schrijf je een nette issue? 
+### Hoe schrijf je nette feedback? 
 Als je iemand feedback geeft, is het belangrijk om duidelijk te beschrijven wat het probleem is en hoe het op te lossen is. En een beetje netjes, respectvol en in foutloos Nederlands kan ook geen kwaad. We zijn hier professionals.
 
 Zo schrijf je nette feedback:
@@ -56,9 +56,9 @@ Doe de review via het issue "Redesign visitekaartje"
 
 - Check eerst of de nieuwste code live staat, vraag dit even aan de persoon die je gaat reviewen
 - Check de HTML met de W3C Validator. Schrijf een _comment_ bij het issue als je een probleem tegenkomt. Het is handig om een checklist te gebruiken als je 
-    - [] meerdere
-    - [] feedback 
-    - [] punten
+    - [ ] meerdere
+    - [ ] feedback 
+    - [ ] punten
     
     hebt
 - Bekijk alle HTML elementen m.b.v. MDN HTML elements reference. Schrijf een nieuwe comment bij het issue als je suggesties hebt voor een ander element.
