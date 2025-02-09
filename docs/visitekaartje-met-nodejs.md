@@ -22,10 +22,8 @@ Voor je kan beginnen, moet je NodeJS installeren zodat je op je laptop aan de sl
 ### Inrichten ontwikkelomgeving
 
 Navigeer naar nodejs.org en installeer de NodeJS ontwikkelomgeving. Kies voor _NodeJS 22.13.1 with long-term support_, download de benodigde bestanden en doorloop het installatieproces.
-  - Optioneel: Volg het [NodeJS ‘Hello World’ voorbeeld](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
-  - Optioneel, iets technischer: Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de NodeJS ontwikkelomgeving.
 
-Fork deze leertaak van [connect-your-tribe-profile-card](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
+Fork daarna deze leertaak van [connect-your-tribe-profile-card](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
 
 Open deze leertaak in Visual Studio Code.
 
@@ -37,6 +35,11 @@ Voer in de terminal het commando `npm install` uit, door het in te typen en op e
 Start het voorbeeld visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is, komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000 — Open deze URL in je browser.
 
 Als het werkt, zet je je server weer uit door in de terminal de toetscombinatie `^c` (control + c) in te voeren. Deze toetsencombinatie wordt in de terminal gebruikt om de huidige taak te stoppen en *controle* (vandaar de c) terug te krijgen van het programma.
+
+  - Optioneel: Volg het [NodeJS ‘Hello World’ voorbeeld](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
+  - Optioneel, iets technischer: Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de NodeJS ontwikkelomgeving.
+
+
 
 #### Bronnen
 
