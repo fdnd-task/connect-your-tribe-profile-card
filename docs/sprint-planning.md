@@ -113,13 +113,13 @@ Probeer via de Console eens jouw eigen data via een `fetch()` binnen te halen. P
 
 Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whois _CMS_ (Content Management System)! Ga hiervoor naar https://whois.fdnd.nl/admin, vul je eigen ID in, en pas je gegevens aan. Je nickname mag je natuurlijk ook veranderen :) In het laatste veld kun je ook extra JSON properties toevoegen. Later deze sprint wordt duidelijk waarom.
 
-‼️ Let op: omdat we deze workshop zo laagdrempelig mogelijk willen houden, werken we niet met logins. Iedereen kan dus iedereens data aanpassen, wat heel snel heel flauw wordt. Denk aan 1.2.3 en hou je alleen bij het aanpassen van je _eigen gegevens_.
+‼️ Let op: omdat we deze workshop zo laagdrempelig mogelijk willen houden, werken we niet met logins. Iedereen kan dus iedereens data aanpassen, wat heel snel heel flauw wordt. Denk aan indicator 1.2.3 en hou je alleen bij het aanpassen van je _eigen gegevens_.
 
 Als je je eigen data opgeslagen hebt, test dit dan uit via de Console. Krijg je daar ook de nieuwe, dynamische data te zien? En kun je al bedenken hoe je dit in gaat zetten?
 
 Welkom bij Semester 2, het Data-Driven Web! :)
 
-Een goede frontender wil JavaScript in een _browser_ vooral inzetten voor leuke extra's. En niet voor fundamentele dingen, zoals het _tonen en opslaan van data_, waar dit semester over gaat. Daarvoor zijn browsers te onbetrouwbaar. Daarom gaan we de komende sprints aan de slag met NodeJS, waarmee we een _server_ kunnen bouwen voor onze frontend. NodeJS gebruikt onder de motorkap ook JavaScript als programmeertaal. Binnen NodeJS kunnen we ook gebruikmaken van `fetch()`, dus alles wat je net geleerd hebt, kun je straks rechtstreeks toepassen.
+Een goede frontender wil JavaScript in een _browser_ vooral inzetten voor leuke extra's. En niet voor _fundamentele_ dingen, zoals het _tonen en opslaan van data_, waar dit semester over gaat. Daarvoor zijn browsers te onbetrouwbaar. Daarom gaan we de komende sprints aan de slag met NodeJS, waarmee we een _server_ kunnen bouwen voor onze frontend. NodeJS gebruikt onder de motorkap ook JavaScript als programmeertaal. Binnen NodeJS kunnen we ook gebruikmaken van `fetch()`, dus alles wat je net geleerd hebt, kun je straks rechtstreeks toepassen.
 
 Teken op het whiteboard een server en een browser, om te laten zien dat je klaar bent met deze instructies.
 
