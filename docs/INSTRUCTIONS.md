@@ -27,4 +27,5 @@ Deze opdracht is done als:
 - [ ] Je hebt je visitekaartje gemaakt met NodeJS, Express en Liquid
 - [ ] Je visitekaartje gebruikt gegevens uit onze JSON REST API
 - [ ] Je hebt een herontwerp van je visitekaartje gemaakt en die doorgevoerd in je frontend code
+- [ ] Je hebt feedback op je NodeJs code en frontend code gehad en zelf feedback gegeven
 - [ ] Je kaartje is live te bekijken
