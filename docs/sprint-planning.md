@@ -69,11 +69,9 @@ JSON is een standaard die veel gebruikt wordt in JavaScript. Niet geheel ontoeva
 
 Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jezelf, met bijvoorbeeld je naam en squad. Voeg ook iets toe wat je zelf hebt verzonnen.
 
-Mocht je willen weten welke data we nog meer in onze whois database klaar hebben staan, kijk dan naar [de volledige JSON](https://fdnd.directus.app/items/person/?fields=*,squads.squad_id.name,squads.squad_id.cohort&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222526%22}}}]}&sort=name).
-
 Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden. JSON wordt vaak samen met een _API_ genoemd; een _Application Programming Interface_. Een stuk software waar je met andere software tegenaan kunt praten. En als we dat via HTTP doen, wordt dat vaak een _REST API_ genoemd.
 
-Om alleen jouw gegevens te krijgen, kun je de volgende links gebruiken: https://fdnd.directus.app/items/person/?filter={"id":234} of https://fdnd.directus.app/items/person/234 — pas in de URL `234` aan naar jouw eigen ID, dat je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug.
+Om alleen jouw gegevens te krijgen, kun je de volgende links gebruiken: https://fdnd.directus.app/items/person/?filter={"id":234} of https://fdnd.directus.app/items/person/234 — pas in de URL `234` aan naar jouw eigen ID, dat je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug. Schrijf op het whiteboard de unieke nickname die we jou gegeven hebben. (Zorg dat je dit alleen voor jezelf doet; het is de bedoeling dat iedereen dit leest en leert. Als iemand anders je om hulp vraagt, help ze dan niet!)
 
 💡 Binnen FDND hebben we overigens niet alleen JSON data van studenten, maar ook van [alle sprints](https://programma.fdnd.nl/api/data-driven-web/connect-your-tribe) en [onze niveaumatrix](https://niveaumatrix.fdnd.nl/niveaumatrix.json). Misschien iets wat je dit Semester in je I Love Web site kunt verwerken?
 
