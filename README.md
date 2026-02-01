@@ -2,7 +2,7 @@
 
 Redesign je visitekaartje en bouw het met NodeJS en een REST API.
 
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/connect-your-tribe-profile-card/blob/main/docs/INSTRUCTIONS.md)
+De instructies vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/connect-your-tribe-profile-card/blob/main/docs/INSTRUCTIONS.md)
 
 
 ## Inhoudsopgave Readme
