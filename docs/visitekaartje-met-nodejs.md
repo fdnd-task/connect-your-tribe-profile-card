@@ -70,7 +70,7 @@ Zet op de plek waar jouw naam in de HTML staat `{{ person.name }}` neer. Dit is 
 
 ### Lokaal Testen
 
-Start je visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is, komt een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze url in je browser.
+Start je visitekaartje op door in de terminal het commando `npm start` uit te voeren. Als het goed is, komt hier een melding te staan over het opstarten van de server: Application started on http://localhost:8000, open deze URL in je browser.
 
 Laat als het werkt met gepaste trots jouw oude visitekaartje zien aan een klasgenoot. Geef ook even een seintje aan je docent.
 
@@ -97,7 +97,7 @@ Zoek de juiste repository (*connect-your-tribe-profile-card* als je niets hernoe
 
 Er wordt een unieke URL voor jouw project door Render gegenereerd.
 
-Open die URL in je browser, check of alles werkt en voer daarna deze URL in bij jouw repository op GitHub.
+Open die URL in je browser, check of alles werkt en voer daarna deze URL in bij de About van jouw repository op GitHub.
 
 Omdat het hosten van NodeJS projecten complexer en duurder is dan het hosten van statische projecten, en we de gratis variant van Render gebruiken, “pauzeert” Render soms na een tijdje jouw project. Het kan daarna even duren voordat je NodeJS project weer opgestart is, soms wel 60 seconden.
 
@@ -133,9 +133,9 @@ Maak een *breakdown* met goede HTML tags, wat hints over CSS en eventueel JS voo
 
 Pas op regel 10 van _server.js_ jouw eigen ID aan (zie het whiteboard), en start je server (opnieuw) op. Als het goed is (en je gebruikt `{{ person.name }}` ergens in de Liquid view template), verschijnt nu jouw eigen naam.
 
-Maak de nieuwe HTML versie van jouw visitekaartje door de `.liquid` bestanden in `/views/` en misschien`/views/partials` aan te passen. Voor wijzigingen in de _view templates_ en je CSS, hoef je je server niet te herstarten. Voor wijzigingen in _server.js_ wel.
+Maak de nieuwe HTML versie van jouw visitekaartje door de `.liquid` bestanden in `/views/` en misschien`/views/partials` aan te passen. Voor wijzigingen in de _view templates_ en je CSS, hoef je je server niet te herstarten. Voor wijzigingen in _server.js_ wél.
 
-🕵️ Tip voor als je wilt weten wat er in een variabele zit (zoals in `person`): toon de data in je browser door het `json` Liquid filter te gebruiken:
+🕵️ Tip voor als je wilt weten wat er in een variabele zit (zoals in `person`): toon de data in je browser door het `json` _Liquid filter_ te gebruiken:
 
 ```liquid
 <p>{{ person|json }}</p>
@@ -143,28 +143,24 @@ Maak de nieuwe HTML versie van jouw visitekaartje door de `.liquid` bestanden in
 
 Maak de nieuwe CSS versie van jouw visitekaartje door de `.css` bestanden aan te passen en check of je wijzigingen goed doorgevoerd zijn.
 
-Voer stap voor stap de gegevens uit de FDND JSON API door in jouw visitekaartje, check na elke stap of alles nog werkt. Voeg eventueel extra data toe in de database, als jouw ontwerp dat nodig heeft. En gebruik de Liquid Template language om je HTML dynamisch te maken.
+Voer stap voor stap de gegevens uit de FDND JSON API door in jouw visitekaartje, check na elke stap of alles nog werkt. Voeg eventueel extra data toe in [de database](https://whois.fdnd.nl/admin), als jouw ontwerp dat nodig heeft. En gebruik de Liquid Template language om je HTML dynamisch te maken.
 
 Blijf stap voor stap werken, stel vragen aan klasgenoten, op Teams, op Discord of aan een docent als je er niet uit komt.
 
-💪 Tip voor als je het `custom` object ook wilt gebruiken: `JSON.parse()`.
+💪 Tip voor als je het `custom` object ook wilt gebruiken: [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse).
 
-Push je werk regelmatig naar GitHub, en vermeld in je commit messages het relevante issue nummer. Kijk ook eens goed naar hoe je _Partial Commits_ in kunt zetten om je werk meer te structureren.
+Push je werk regelmatig naar GitHub, en vermeld in je commit messages het relevante issue nummer. Kijk ook eens goed naar hoe je [_Partial Commits_](https://github.blog/news-insights/product-news/partial-commits-in-github-for-windows/) in kunt zetten om je werk meer te structureren.
 
 #### Bronnen
 
 - [The Liquid Template Language](https://liquidjs.com/tutorials/intro-to-liquid.html)
 - [Liquid Filters](https://liquidjs.com/filters/overview.html)
-- [Using the Fetch API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Express documentatie](https://expressjs.com/en/5x/api.html) (geavanceerd)
-- [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
-- [Partial commits in GitHub Desktop](https://github.blog/news-insights/product-news/partial-commits-in-github-for-windows/)
-- [Committing and reviewing changes to your project in GitHub Desktop](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)
 
 
 ### Integreren: je nieuwe werk online zetten
 
-Een ander verschil tussen Render en GitHub Pages, is dat je bij Render handmatige deploys moet maken. Nadat je je werk naar GitHub hebt gepusht, komt dat niet automatisch live. Je kunt dit wel instellen, maar dat is aan jou. Vergeet voor nu niet een handmatige deploy te doen als je je nieuwe werk aan de wereld wilt laten zien.
+Een ander verschil tussen Render en GitHub Pages, is dat je bij Render handmatige _deploys_ moet maken. Nadat je je werk naar GitHub hebt gepusht, komt dat niet automatisch live. Je kunt dit wel instellen, maar dat is aan jou. Vergeet voor nu niet een handmatige deploy te doen als je je nieuwe werk aan de wereld wilt laten zien.
 
 #### Bronnen
 
