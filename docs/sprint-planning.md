@@ -36,7 +36,7 @@ Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het progr
 
 Voor FDND hebben we een database gemaakt, waar jullie allemaal in staan. Deze database bieden we via een JSON API aan. Bekijk als voorbeeld [een gesorteerde lijst met jullie namen](https://fdnd.directus.app/items/person/?fields=name&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222526%22}}}]}&sort=name). Dit is JSON data.
 
-Schrijf op het whiteboard je eigen naam, en zoek in [deze gesorteerde lijst met namen, unieke ID's en GitHub profielen](https://fdnd.directus.app/items/person/?fields=id,name,github_handle&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222425%22}}}]}&sort=name) je eigen naam. Schrijf op het bord welk ID jij hebt in onze database.
+Schrijf op het whiteboard je eigen naam, en zoek in [deze gesorteerde lijst met namen, unieke ID's en GitHub profielen](https://fdnd.directus.app/items/person/?fields=id,name,github_handle&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222526%22}}}]}&sort=name) je eigen naam. Schrijf op het bord welk ID jij hebt in onze database.
 
 Je zag in het vorige voorbeeld dat JSON data meerdere _eigenschappen_ kan hebben:
 
