@@ -92,21 +92,21 @@ Open in je browser bijvoorbeeld https://fdnd.nl/, en open de Console. Plak het v
 
 ```js
 personResponse = await fetch('https://fdnd.directus.app/items/person/234')
-personResponseJSON = await personResponse.json()
+person = await personResponse.json()
 
-console.log(personResponseJSON)
+console.log(person)
 ```
 
 Je ziet dat je browser nu dynamische data heeft geladen via onze JSON API. En die data kun je gebruiken in je code. Je kunt, als je weet welke _properties_ de data heeft, ook direct bepaalde waardes uitlezen:
 
 ```js
-console.log(personResponseJSON.data)
+console.log(person.data)
 ```
 
 Dit geeft een object terug; één persoon. Als je wilt weten hoe deze persoon heet, kun je dat zo doen:
 
 ```js
-console.log(personResponseJSON.data.name)
+console.log(person.data.name)
 ```
 
 Probeer via de Console eens jouw eigen data via een `fetch()` binnen te halen. Pas hiervoor de URL in het voorbeeld hierboven aan met jouw eigen ID. Tip: met pijltje naar boven kun je eerdere regels uit de Console terughalen en bewerken.
