@@ -21,13 +21,13 @@ Voor je kan beginnen, moet je NodeJS installeren zodat je op je laptop aan de sl
 
 ### Inrichten ontwikkelomgeving
 
-Navigeer naar nodejs.org en installeer de NodeJS ontwikkelomgeving. Kies voor _NodeJS 22.13.1 with long-term support_, download de benodigde bestanden en doorloop het installatieproces.
+Navigeer naar [https://nodejs.org/](https://nodejs.org/en/download) en installeer de NodeJS ontwikkelomgeving. Kies voor _NodeJS 24.13.0_ (LTS, long-term support), download de benodigde bestanden en doorloop het installatieproces.
 
 Fork daarna deze leertaak van [connect-your-tribe-profile-card](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
 
-Open deze leertaak in Visual Studio Code.
+Open deze leertaak in VSCodium.
 
-Open de _Terminal_ in Visual Studio Code door de toetscombinatie `` ^` `` (control + `) te gebruiken. Er opent een terminalscherm in de hoofdmap van jouw project.
+Open de _Terminal_ in VSCodium door de toetscombinatie `` ^` `` (control + `) te gebruiken. Er opent een terminalscherm in de hoofdmap van jouw project.
 
 Voer in de terminal het commando `npm install` uit, door het in te typen en op enter te drukken. Je gebruikt _NPM_, de _NodeJS Package Manager_ om alle _afhankelijkheden_ voor dit project te installeren. NPM is een veelgebruikte package manager in frontend land. Voor dit project gebruiken we _Express_ (om een _server_ te maken) en _Liquid_ (om HTML te _renderen_).
   - (Optioneel) Na de installatie is de map `node_modules` aangemaakt, en gevuld met allerlei _packages_. Scroll eens door deze map heen; vele honderden *open source* ontwikkelaars hebben de packages die je ziet gebouwd en die mag je gratis gebruiken. Ontwikkelen in NodeJS is *standing on the shoulders of giants*.
