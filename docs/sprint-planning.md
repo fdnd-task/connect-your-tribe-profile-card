@@ -88,7 +88,7 @@ Heel leuk, dat technische formaat, voor frontenders zoals wij. Normale mensen zi
 
 Het mooie is dat we ook met JavaScript JSON via een URL kunnen binnenhalen, net als hoe de browser dat doet via de URL bar. In JavaScript hebben we hiervoor de _`fetch()` methode_.
 
-Open in je browser (in Chrome, Edge of Firefox) bijvoorbeeld https://fdnd.nl/, en open de Console. Plak het volgende JavaScript in de Console:
+Open in Chrome, Edge of Firefox (Safari heeft hier nog moeite mee) bijvoorbeeld https://fdnd.nl/, en open de Console. Plak het volgende JavaScript in de Console:
 
 ```js
 personResponse = await fetch('https://fdnd.directus.app/items/person/234')
