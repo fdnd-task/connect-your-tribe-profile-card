@@ -24,6 +24,7 @@ Deze leertaak wordt behandeld in de eerste week van sprint 7 met verschillende w
 
 Deze opdracht is done als:
 
-- [ ] Je hebt je visitekaartje gemaakt met NodeJS
-- [ ] Je kaartje gebruikt gegevens uit de REST API op whois.fdnd.nl
-- [ ] Je kaartje is gepubliceerd via cyclic.sh
+- [ ] Je hebt je visitekaartje gemaakt met NodeJS, Express en Liquid
+- [ ] Je visitekaartje gebruikt gegevens uit onze JSON REST API
+- [ ] Je hebt een herontwerp van je visitekaartje gemaakt en die doorgevoerd in je frontend code
+- [ ] Je kaartje is live te bekijken
