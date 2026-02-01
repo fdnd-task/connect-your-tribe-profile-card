@@ -16,9 +16,7 @@ Deze leertaak wordt behandeld in de eerste week van sprint 7 met verschillende w
 
 - [Sprint planning](sprint-planning.md) - Maandag
 - [Visitekaartje met NodeJS](visitekaartje-met-nodejs.md) - Maandag
-- Practicum Visitekaartje met NodeJS - Maandag
 - [REST API en JSON](rest-api-en-json.md) - Woensdag
-- Practicum REST API en JSON - Woensdag
 - [Code/Design review NodeJS Code](code-design-review-nodejs.md) - Vrijdag
 
 
