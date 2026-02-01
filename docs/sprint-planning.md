@@ -111,7 +111,7 @@ console.log(person.data.name)
 
 Probeer via de Console eens jouw eigen data via een `fetch()` binnen te halen. Pas hiervoor de URL in het voorbeeld hierboven aan met jouw eigen ID. Tip: met pijltje naar boven kun je eerdere regels uit de Console terughalen en bewerken.
 
-Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whois CMS! Ga hiervoor naar https://whois.fdnd.nl/admin, vul je eigen ID in, en pas je gegevens aan. In het laatste veld kun je ook extra JSON properties toevoegen. Later deze sprint wordt duidelijk waarom.
+Als dit je is gelukt, wordt het tijd om de data aan te passen, via het FDND whois _CMS_ (Content Management System)! Ga hiervoor naar https://whois.fdnd.nl/admin, vul je eigen ID in, en pas je gegevens aan. Je nickname mag je natuurlijk ook veranderen :) In het laatste veld kun je ook extra JSON properties toevoegen. Later deze sprint wordt duidelijk waarom.
 
 ‼️ Let op: omdat we deze workshop zo laagdrempelig mogelijk willen houden, werken we niet met logins. Iedereen kan dus iedereens data aanpassen, wat heel snel heel flauw wordt. Denk aan 1.2.3 en hou je alleen bij het aanpassen van je _eigen gegevens_.
 
