@@ -67,7 +67,7 @@ En dat een JSON object uit een _lijst_ (array) van meerdere objecten kan bestaan
 
 JSON is een standaard die veel gebruikt wordt in JavaScript. Niet geheel ontoevallig, want JSON staat voor _JavaScript Object Notation_.
 
-Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jezelf, met bijvoorbeeld je naam en squad. Voeg ook iets toe wat je zelf hebt verzonnen. Net als wat je bij je poster voor de Expo deed, maar dan niet als Custom Property in CSS, maar in JSON formaat. Welke verschillen zie je in de syntax?
+Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jezelf, met bijvoorbeeld je naam en squad. Voeg ook iets toe wat je zelf hebt verzonnen.
 
 Mocht je willen weten welke data we nog meer in onze whois database klaar hebben staan, kijk dan naar [de volledige JSON](https://fdnd.directus.app/items/person/?fields=*,squads.squad_id.name,squads.squad_id.cohort&filter={%22_and%22:[{%22squads%22:{%22squad_id%22:{%22tribe%22:{%22name%22:%22FDND%20Jaar%201%22}}}},{%22squads%22:{%22squad_id%22:{%22cohort%22:%222526%22}}}]}&sort=name).
 
