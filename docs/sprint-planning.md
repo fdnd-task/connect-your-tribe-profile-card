@@ -71,7 +71,7 @@ Schrijf als oefening op het whiteboard allemaal een simpel JSON object over jeze
 
 Zoals je merkt, is dit lastig lezen, omdat er van veel studenten veel data is. JSON is niet gemaakt om leesbaar te zijn voor mensen, maar vooral om makkelijk en snel data over te brengen tussen software. Vaak dus met JavaScript, maar JSON kan in vrijwel iedere programmeertaal gebruikt worden. JSON wordt vaak samen met een _API_ genoemd; een _Application Programming Interface_. Een stuk software waar je met andere software tegenaan kunt praten. En als we dat via HTTP doen, wordt dat vaak een _REST API_ genoemd.
 
-Om alleen jouw gegevens te krijgen, kun je de volgende links gebruiken: https://fdnd.directus.app/items/person/?filter={"id":234} of https://fdnd.directus.app/items/person/234 — pas in de URL `234` aan naar jouw eigen ID, dat je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug. Schrijf op het whiteboard de _unieke nickname_ die we jou (met hulp van ChatGPT) gegeven hebben. (Zorg dat je dit alleen voor jezelf doet; het is de bedoeling dat iedereen dit leest en leert. Als iemand anders je om hulp vraagt, help ze dan niet!)
+Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://fdnd.directus.app/items/person/234 — pas in de URL `234` aan naar jouw eigen ID, dat je net op het whiteboard hebt geschreven. Als het goed is, krijg je dan maar één JSON object terug. Schrijf op het whiteboard de _unieke nickname_ die we jou (met hulp van ChadGPT) gegeven hebben. (Zorg dat je dit alleen voor jezelf doet; het is de bedoeling dat iedereen dit leest en leert. Als iemand anders je om hulp vraagt, help ze dan niet!)
 
 💡 Binnen FDND hebben we overigens niet alleen JSON data van studenten, maar ook van [alle sprints](https://programma.fdnd.nl/api/data-driven-web/connect-your-tribe) en [onze niveaumatrix](https://niveaumatrix.fdnd.nl/niveaumatrix.json). Misschien iets wat je dit Semester in je I Love Web site kunt verwerken?
 
@@ -104,16 +104,10 @@ Je ziet dat je browser nu dynamische data heeft geladen via onze JSON API. En di
 console.log(personResponseJSON.data)
 ```
 
-Dit geeft een array terug, met daarin één persoon. Zoals je uit de JS fundamentals deeltaak weet, beginnen arrays te tellen bij 0. Als we dus het eerste item uit de array willen hebben, doen we dat zo:
+Dit geeft een object terug; één persoon. Als je wilt weten hoe deze persoon heet, kun je dat zo doen:
 
 ```js
-console.log(personResponseJSON.data[0])
-```
-
-En als je alleen wilt weten hoe deze persoon heet, kun je dat zo doen:
-
-```js
-console.log(personResponseJSON.data[0].name)
+console.log(personResponseJSON.data.name)
 ```
 
 Probeer via de Console eens jouw eigen data via een `fetch()` binnen te halen. Pas hiervoor de URL in het voorbeeld hierboven aan met jouw eigen ID. Tip: met pijltje naar boven kun je eerdere regels uit de Console terughalen en bewerken.
