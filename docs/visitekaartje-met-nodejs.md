@@ -3,7 +3,8 @@
 
 ## Visitekaartje met NodeJS
 
-Redesign je visitekaartje met NodeJS en data uit de [whois.fdnd.nl](https://whois.fdnd.nl) API.
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. Redesign je visitekaartje uit sprint 1 met NodeJS en data uit de [whois.fdnd.nl](https://whois.fdnd.nl) API.
+
 
 ## Aanpak
 
