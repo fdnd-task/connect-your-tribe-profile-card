@@ -7,7 +7,7 @@ Redesign je visitekaartje met NodeJS en data uit de [whois.fdnd.nl](https://whoi
 
 ## Aanpak
 
-In de opdracht hieronder bouw je eerst jouw visitekaartje in NodeJS. Daarvoor moet je NodeJS installeren en ga je bestanden op je NodeJS server plaatsen. Omdat dit de eerste keer is dat we NodeJS gebruiken, en dat net even anders werkt dan statische HTML, gaan we meteen door naar Integreren. Ontwerpen laten we voor een iteratie achterwege.
+In de opdracht hieronder bouw je eerst jouw visitekaartje in NodeJS. Daarvoor moet je NodeJS installeren en ga je bestanden op je NodeJS server plaatsen. Omdat dit de eerste keer is dat we NodeJS gebruiken, en dat net even anders werkt dan statische HTML, gaan we zo snel mogelijk naar Integreren. Ontwerpen laten we voor deze iteratie achterwege.
 
 In een iteratie daarna ga je je visitekaartje met een REST API en JSON (her)ontwerpen, bouwen en opnieuw publiceren.
 
