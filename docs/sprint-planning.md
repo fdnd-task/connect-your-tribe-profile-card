@@ -80,7 +80,6 @@ Om alleen jouw gegevens te krijgen, kun je de volgende link gebruiken: https://f
 
 - [Working with JSON @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON)
 - [Introducing JSON](https://www.json.org/json-en.html)
-- [Query Parameters @ Directus](https://directus.io/docs/guides/connect/query-parameters) (binnen FDND gebruiken we Directus als database)
 
 
 ## Data fetchen
@@ -89,7 +88,7 @@ Heel leuk, dat technische formaat, voor frontenders zoals wij. Normale mensen zi
 
 Het mooie is dat we ook met JavaScript JSON via een URL kunnen binnenhalen, net als hoe de browser dat doet via de URL bar. In JavaScript hebben we hiervoor de _`fetch()` methode_.
 
-Open je browser op een willekeurige site, en open de Console. Plak het volgende JavaScript in de Console:
+Open in je browser bijvoorbeeld https://fdnd.nl/, en open de Console. Plak het volgende JavaScript in de Console:
 
 ```js
 personResponse = await fetch('https://fdnd.directus.app/items/person/234')
@@ -128,3 +127,4 @@ Teken op het whiteboard een server en een browser, om te laten zien dat je klaar
 ### Bronnen
 
 - [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Query Parameters @ Directus](https://directus.io/docs/guides/connect/query-parameters) (binnen FDND gebruiken we Directus als database)
