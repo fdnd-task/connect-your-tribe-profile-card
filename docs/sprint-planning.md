@@ -19,7 +19,7 @@ Voordat we daarmee gaan beginnen, gaan we bekijken waar het semester over gaat. 
 
 In het eerste semester heb je responsive websites gemaakt met _statische data_, alle content heb je toen in de HTML geschreven. In het Data-Driven Web ga je dit met _dynamische data_ doen. _Dynamische data_ komt uit een database en kan bijvoorbeeld door een klant of opdrachtgever zelf aangepast worden. Teksten en plaatjes schrijf je dan niet in de HTML, maar haal je met een API uit een database.
 
-Bekijk op [programma.fdnd.nl](https://programma.fdnd.nl/) alle sprints van Semester 2. Lees de inleidende teksten op de sprint pagina's en noteer wat je interessant vindt, wat je moeilijk lijkt en/of wat je al kan.
+Bekijk op [programma.fdnd.nl](https://programma.fdnd.nl/) alle sprints van Semester 2. Lees de inleidende teksten op de sprint pagina's en noteer op het whiteboard wat je interessant vindt, wat je moeilijk lijkt en/of wat je al kan.
 
 ![](programma.fdnd.png)
 _Op programma.fdnd.nl staan alle sprints voor Semester 2_
