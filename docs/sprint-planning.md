@@ -94,7 +94,7 @@ Het mooie is dat we ook met JavaScript JSON via een URL kunnen binnenhalen, net 
 Open je browser op een willekeurige site, en open de Console. Plak het volgende JavaScript in de Console:
 
 ```js
-personResponse = await fetch('https://fdnd.directus.app/items/person/?filter={"id":234}')
+personResponse = await fetch('https://fdnd.directus.app/items/person/234')
 personResponseJSON = await personResponse.json()
 
 console.log(personResponseJSON)
