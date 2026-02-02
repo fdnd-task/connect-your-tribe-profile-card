@@ -126,6 +126,8 @@ Een goede frontender wil JavaScript in een _browser_ vooral inzetten voor leuke 
 
 Teken op het whiteboard een server en een browser, om te laten zien dat je klaar bent met deze instructies.
 
+💪 Ken je `fetch()` al, en vloog je hier doorheen? Probeer dan uit te vinden waarom dit niet werkt in Safari, en schrijf dit ook op het bord.
+
 
 ### Bronnen
 
