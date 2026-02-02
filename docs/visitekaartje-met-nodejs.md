@@ -22,7 +22,7 @@ Voor je kan beginnen, moet je NodeJS installeren zodat je op je laptop aan de sl
 
 ### Inrichten ontwikkelomgeving
 
-Navigeer naar [https://nodejs.org/](https://nodejs.org/en/download) en installeer de NodeJS ontwikkelomgeving. Kies voor _NodeJS 24.13.0_ (LTS, long-term support), download de benodigde bestanden en doorloop het installatieproces.
+Navigeer naar [https://nodejs.org/](https://nodejs.org/en/download) en installeer de NodeJS ontwikkelomgeving. Kies voor _NodeJS 24.13.0_ (LTS, long-term support), download het installatiebestand en doorloop het installatieproces.
 
 Fork daarna deze leertaak van [connect-your-tribe-profile-card](https://github.com/fdnd-task/connect-your-tribe-profile-card) en *clone* deze op jouw computer.
 
