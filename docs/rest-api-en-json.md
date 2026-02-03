@@ -87,7 +87,7 @@ Had je je `custom` property (niet te verwarren met CSS Custom Properties) nog ni
 We gaan proberen de `custom` property uit te lezen:
 ![](custom-data.png)
 
-De gegevens in de `custom` property zijn door Directus opgeslagen als _String_, en komen ook zo terug als je de data ophaalt. Voordat je de `personResponseJSON.data` meegeeft aan de view, en de verschillende properties van de `custom` property kunt gebruiken, moet deze nog omgezet worden naar een object. Je zult hiervoor met [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) aan de slag moeten, en de `custom` property string moeten overschrijven met een object.
+De gegevens in de `custom` property zijn door Directus opgeslagen als _String_, en komen ook zo terug als je de data ophaalt. Voordat je de `personResponseJSON.data` meegeeft aan de view, en de verschillende properties van de `custom` property kunt gebruiken, moet deze nog omgezet worden naar een object. Je zult hiervoor met [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) aan de slag moeten, en de `custom` property string moeten overschrijven met een object, in `server.js`. Of je kunt het custom object na parsen als _extra parameter_ meegeven aan je view.
 
 Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. <!-- En teken er een bosje peterselie bij, zodat anderen je weten te vinden. 🌿 -->
 
