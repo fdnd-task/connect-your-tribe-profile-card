@@ -59,13 +59,15 @@ Voeg vervolgens deze code toe aan je pagina:
 <p>Het is vandaag {{ 'now' | date }}</p>
 ```
 
-En ververs de pagina. Waarschijnlijk niet helemaal wat je gehoopt had, en waarschijnlijk ook niet wat je bezoekers willen lezen.
+En ververs de pagina. Je hebt nu het Liquid _`date` filter_ gebruikt. Maar waarschijnlijk toont het niet helemaal hoe je het hoopt. Gelukkig hebben veel Liquid filters extra mogelijkheden (_parameters_) om de _output_ te veranderen.
 
-Zorg er met de documentatie van het Liquid `date` _filter_ voor dat de datum in een iets vriendelijke formaat getoond wordt. Niet door de datum keihard in je HTML neer te zetten, maar door de dynamische datum om te zetten naar wat anders.
+Gebruik de documentatie van [het Liquid `date` _filter_](https://liquidjs.com/filters/date.html) om de datum in een iets vriendelijker formaat te tonen. Waarschijnlijk kom je uit op iets als `{{ 'now' | date: '%d-%m-%Y' }}` of `{{ 'now' | date: '%d' }}`. Experimenteer met verschillende _parameters_.
 
-Als dat gelukt is, en je hebt in de whois database je eigen geboortedatum ingevuld, laat die dan ook zien op deze pagina. (Heb je geen idee waar die whois database over gaat, volg dan nog even de [Sprint planning van maandag](sprint-planning.md).) Kun je die datum ook beter leesbaar tonen?
+Als dit gelukt is, en je hebt in de WHOIS database je eigen geboortedatum ingevuld, laat die dan ook zien op deze pagina. (Heb je geen idee waar die WHOIS database over gaat, volg dan nog even de [Sprint planning van maandag](sprint-planning.md).) Kun je die datum ook beter leesbaar tonen?
 
 🐛 Tip: Als je niet meer weet hoe die _property_ van het `person` object heet (was het nou `birthdate` of `birth_date`?), zet `{{ person | json }}` in je code, en bekijk het antwoord in je pagina.
+
+🔍 Onderzoek het [overzicht met Liquid filters](https://liquidjs.com/filters/overview.html) en bekijk wat je hier zoal nog meer mee kunt doen.
 
 💡 Pro-tip: zorg dat je tijdens het bouwen en debuggen standaard ergens op je pagina een custom made fixed positioned `<details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>` element hebt—dan kun je altijd even spieken in je data. Haal die alleen wel weg voordat je je werk live zet :)
 
@@ -85,11 +87,11 @@ Had je je `custom` property (niet te verwarren met CSS Custom Properties) nog ni
 We gaan proberen de `custom` property uit te lezen:
 ![](custom-data.png)
 
-De gegevens in de `custom` property zijn door Directus opgeslagen als _String_, en komen ook zo terug als je de data ophaalt. Voordat je de `personResponseJSON.data` meegeeft aan de view, en de verschillende properties van de `custom` property kunt gebruiken, moet deze nog omgezet worden naar een object. Je zult hiervoor met `JSON.parse()` aan de slag moeten, en de `custom` property string moeten overschrijven met een object.
+De gegevens in de `custom` property zijn door Directus opgeslagen als _String_, en komen ook zo terug als je de data ophaalt. Voordat je de `personResponseJSON.data` meegeeft aan de view, en de verschillende properties van de `custom` property kunt gebruiken, moet deze nog omgezet worden naar een object. Je zult hiervoor met [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) aan de slag moeten, en de `custom` property string moeten overschrijven met een object.
 
-Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. En teken er een bosje peterselie bij, zodat anderen je weten te vinden.
+Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig binnen je squad! Schrijf op het whiteboard in groen je naam als je dit al in je code hebt. <!-- En teken er een bosje peterselie bij, zodat anderen je weten te vinden. 🌿 -->
 
-Ga hierna verder met je eigen visitekaartje verbeteren. Probeer alle content uit de whois API te halen, door het `custom` veld te gebruiken. Vergeet niet wat je in Sprint 6 hebt gedaan rondom gestructureerd werken volgens de development lifecycle; probeer je werk op te delen in verschillende taken/issues. Analyseer wat je per taak moet doen, maak wat ontwerpen en schetsen, klop wat code, integreer het met Render en test je werk. En vraag regelmatig om feedback. Zet 'm op!
+Ga hierna verder met je eigen visitekaartje verbeteren. Probeer alle content uit de WHOIS API te halen, door het `custom` veld te gebruiken. Vergeet niet wat je in Sprint 6 hebt gedaan rondom gestructureerd werken volgens de development lifecycle; probeer je werk op te delen in verschillende taken/issues. Analyseer wat je per taak moet doen, maak wat ontwerpen en schetsen, klop wat code, integreer het met Render en test je werk. En vraag regelmatig om feedback. Zet 'm op!
 
 ### Bronnen
 
