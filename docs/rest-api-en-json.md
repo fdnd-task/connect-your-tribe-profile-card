@@ -93,6 +93,10 @@ Een aantal medestudenten is dit inmiddels al gelukt, dus de kennis is aanwezig b
 
 Ga hierna verder met je eigen visitekaartje verbeteren. Probeer alle content uit de WHOIS API te halen, door het `custom` veld te gebruiken. Vergeet niet wat je in Sprint 6 hebt gedaan rondom gestructureerd werken volgens de development lifecycle; probeer je werk op te delen in verschillende taken/issues. Analyseer wat je per taak moet doen, maak wat ontwerpen en schetsen, klop wat code, integreer het met Render en test je werk. En vraag regelmatig om feedback. Zet 'm op!
 
+## Advanced / Extra / Optioneel / Uitdagend
+
+Volg de stappen opnieuw en maak nóg een route aan in jouw server.js. Verwijs naar een andere liquid file en zet daar andere content in. Speel eens met een van de andere liquid filters.
+
 ### Bronnen
 
 - [JSON.parse() @ MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
