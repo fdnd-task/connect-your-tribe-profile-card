@@ -26,11 +26,15 @@ Zoek in dat bestand op waar de route naar je visitekaartje staat (waarschijnlijk
 
 Routes kun je koppelen aan _Views_, door een _callback function_. Elke keer dat een bezoeker een bepaalde route bezoekt, wordt de callback function uitgevoerd. In die functie wordt een view _gerenderd_ (niet te verwarren met Render, waar we de site hosten). In dit geval wordt op de root URL `/` de view `index.liquid` gerenderd. Aan die view wordt een object meegegeven. Met de data uit de API, zodat die gegevens ook in die view gebruikt kunnen worden. Als je geen data meegeeft aan de view, kan deze die data ook niet tonen.
 
-Maak eerst een nieuw leeg bestand aan in de map `views`, genaamd `oefenen.liquid`.
+Maak eerst een nieuw leeg bestand aan in de map `views`, genaamd `practice.liquid`.
 
-Maak daarna in `server.js` een extra route aan voor de URL `/oefenen`, en zorg dat `oefenen.liquid` gerenderd wordt als die URL bezocht wordt. Kopieer hiervoor de paar regels van de `/` route, en pas deze aan. Meestal zet je routes bij elkaar in de buurt, zodat je snel terug kunt vinden welke routes er allemaal voor je website aangemaakt zijn.
+Maak daarna in `server.js` een extra route aan voor de URL `/oefenen`, en zorg dat `practice.liquid` gerenderd wordt als die URL bezocht wordt. Kopieer hiervoor de paar regels van de `/` route, en pas deze aan. Meestal zet je routes bij elkaar in de buurt, zodat je snel terug kunt vinden welke routes er allemaal voor je website aangemaakt zijn.
+
+Merk op dat je _route_ en de bestandsnaam van je _view_ _niet_ hetzelfde hoeven te zijn.
 
 (Her)start je lokale server door `npm start` uit te voeren; voor elke wijziging in `server.js` moet je dit doen. Open http://localhost:8000/oefenen in je browser, en controleer of je een lege pagina krijgt. Als je een foutmelding krijgt, laat het dan even weten :)
+
+💪 Wil je dus meerdere pagina's in je visitekaartje? Maak dan extra routes en views aan door deze stappen te volgen.
 
 ### Bronnen
 
