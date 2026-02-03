@@ -53,7 +53,7 @@ Merk op dat je _route_ en de bestandsnaam van je _view_ _niet_ hetzelfde hoeven 
 Voor deze opdracht ga je je naam toevoegen aan de nieuwe view en de datum van vandaag tonen:
 ![](spelen-met-liquid-filters.png)
 
-Voeg aan `oefenen.liquid` de volgende code toe:
+Voeg aan `practice.liquid` de volgende code toe:
 
 ```liquid
 <h1>Data-Driven Web</h1>
