@@ -41,7 +41,7 @@ Merk op dat je _route_ en de bestandsnaam van je _view_ _niet_ hetzelfde hoeven 
 
 (Her)start je lokale server door `npm start` uit te voeren; voor elke wijziging in `server.js` moet je dit doen. Open http://localhost:8000/oefenen in je browser, en controleer of je een lege pagina krijgt. Als je een foutmelding krijgt, laat het dan even weten :)
 
-💪 Wil je dus meerdere pagina's in je visitekaartje? Maak dan extra routes en views aan door deze stappen te volgen.
+💪 Wil je dus meerdere pagina's in je visitekaartje? Maak dan extra routes en views aan door deze stappen te volgen. En gebruik `<a>` elementen om naar je verschillende routes te linken vanuit je HTML (`<a href="/">Home</a>`, `<a href="/oefenen">Oefenpagina</a>`, etc).
 
 ### Bronnen
 
