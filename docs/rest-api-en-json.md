@@ -30,6 +30,13 @@ Maak eerst een nieuw leeg bestand aan in de map `views`, genaamd `practice.liqui
 
 Maak daarna in `server.js` een extra route aan voor de URL `/oefenen`, en zorg dat `practice.liquid` gerenderd wordt als die URL bezocht wordt. Kopieer hiervoor de paar regels van de `/` route, en pas deze aan. Meestal zet je routes bij elkaar in de buurt, zodat je snel terug kunt vinden welke routes er allemaal voor je website aangemaakt zijn.
 
+```js
+app.get('/oefenen', async function (request, response) {
+   // Render practice.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
+   response.render('practice.liquid', {person: personResponseJSON.data})
+})
+```
+
 Merk op dat je _route_ en de bestandsnaam van je _view_ _niet_ hetzelfde hoeven te zijn.
 
 (Her)start je lokale server door `npm start` uit te voeren; voor elke wijziging in `server.js` moet je dit doen. Open http://localhost:8000/oefenen in je browser, en controleer of je een lege pagina krijgt. Als je een foutmelding krijgt, laat het dan even weten :)
