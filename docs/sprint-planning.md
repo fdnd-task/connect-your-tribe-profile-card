@@ -30,7 +30,7 @@ Het programma is voller dan Semester 1, de technieken zijn moeilijker en de take
 Omdat de tweedejaars op stage zijn kunnen eerstejaars ook 's middags bij FDND werken en leren. 
 Dit is voor beginnende en ervaren frontenders nuttig om snel NodeJS te leren, vragen te kunnen stellen en anderen te helpen.
 
-Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Check de DoD's van wat je vrijdag af moet hebbem. 
+Teken een weekschema op het whiteboard voor de komende 3 weken. Bekijk het programma van Sprint 7 en neem de belangrijke momenten en opdrachten uit het programma op in het schema. Check de DoD's van wat je vrijdag af moet hebben. 
 
 Bedenk in je planning ook wanneer je gaat werken aan de JS fundamentals deeltaak? Wanneer ga je 20% van je tijd besteden aan je I Love Web site? Heb je gezien dat beide deeltaken voor Semester 2 wat uitgebreider zijn? Lees de instructies van deze deeltaken ook door.
 
