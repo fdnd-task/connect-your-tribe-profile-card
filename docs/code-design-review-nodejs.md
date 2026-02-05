@@ -7,13 +7,13 @@ Deze week heb je een visitekaartje ontworpen en gemaakt met NodeJS, een REST API
 Is het gelukt? Cool he!?
 
 ### Aanpak
-Vandaag krijg je feedback op je NodeJS code en een check op je client-side code.
+Vandaag krijg je feedback op je server-side code en een check op je client-side code.
 
-## 1. NodeJS code
-Eerst ga je jouw NodeJS code uitleggen aan twee peers. Deze opdracht doe je dus met 3 personen. 
+## 1. Server-side code
+Eerst ga je jouw server-side code uitleggen aan twee peers. Deze opdracht doe je dus met 3 personen. 
 
 ### Hardop uitleggen
-Leg om de beurt jouw NodeJS code uit aan de anderen. Weet je iets niet? Helemaal niet erg, we zijn hier om te leren, maar schrijf daar dan meteen een comment bij om later uit te zoeken. 
+Leg om de beurt jouw server-side code uit aan de anderen. Weet je iets niet? Helemaal niet erg, we zijn hier om te leren, maar schrijf daar dan meteen een comment bij om later uit te zoeken. 
 - Begin met het `server.js` bestand uit te leggen; loop stap voor stap langs elke regel. 
 - Ergens wordt JSON data geladen, weet jij al hoe dat werkt in NodeJS? Probeer maar eens uit te leggen.
 - In de _Routes_ staan ... _Routes_ ... naar de pagina die gerenderd moet worden. Leg uit wat er gebeurt, volg de code naar de view.
