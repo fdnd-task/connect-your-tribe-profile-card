@@ -51,8 +51,10 @@ Doe de review via het issue "Redesign visitekaartje"
     - [ ] punten
     - [ ] hebt
 - Bekijk alle HTML elementen m.b.v. MDN HTML elements reference. Schrijf een nieuwe comment bij het issue als je suggesties hebt voor een ander element.
+- Test het visitekaartje met een tabtest. Tab door de website heen en merk op of dit lukt of niet. Voer eventueel nog een andere test toe uit de A11y project (pak daarvoor de (Wcag audit test deeltaak([https://github.com/fdnd-task/wcag-audit/blob/main/docs/INSTRUCTIONS.md#2-handmatige-tests] er nog eens bij uit sprint 3.)
 - Check de CSS, schrijf een comment als je iets ziet waar je de ander mee kan helpen. Neem per review iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd, en schrijf dit in je Learning Journal.
 - Check de JS, schrijf zo nodig een comment, en neem iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd. Noteer dit in je Learning Journal (daar kan je dan zondag lekker mee gaan pielen 🤠)
+
 
 
 
