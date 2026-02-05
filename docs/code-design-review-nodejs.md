@@ -45,7 +45,7 @@ Zo schrijf je nette feedback:
 Doe de review via het issue "Redesign visitekaartje" 
 
 - Check eerst of de nieuwste code live staat, vraag dit even aan de persoon die je gaat reviewen
-- Check de HTML met de W3C Validator. Schrijf een _comment_ bij het issue als je een probleem tegenkomt. Het is handig om een checklist te gebruiken als je 
+- Check de _gerenderde_ HTML met de W3C Validator. Schrijf een _comment_ bij het issue als je een probleem tegenkomt. Het is handig om een checklist te gebruiken als je 
     - [ ] meerdere
     - [ ] feedback 
     - [ ] punten
