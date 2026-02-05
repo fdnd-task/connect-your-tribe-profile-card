@@ -12,7 +12,7 @@ Vandaag krijg je feedback op je NodeJS code en een check op je client-side code.
 ## 1. NodeJS code
 Eerst ga je jouw NodeJS code uitleggen aan twee peers. Deze opdracht doe je dus met 3 personen. 
 
-### Hardop je uitleggen
+### Hardop uitleggen
 Leg om de beurt jouw NodeJS code uit aan de anderen. Weet je iets niet? Helemaal niet erg, we zijn hier om te leren, maar schrijf daar dan meteen een comment bij om later uit te zoeken. 
 - Begin met het `server.js` bestand uit te leggen; loop stap voor stap langs elke regel. 
 - Ergens wordt JSON data geladen, weet jij al hoe dat werkt in NodeJS? Probeer maar eens uit te leggen.
