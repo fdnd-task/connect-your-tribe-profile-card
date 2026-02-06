@@ -23,6 +23,8 @@ Leg om de beurt jouw server-side code uit aan de anderen. Weet je iets niet? Hel
 Als iedereen zijn eigen code heeft uitgelegd, schrijven jullie op het whiteboard 3 interessante technieken die bij jullie zijn behandeld.
 Zo kunnen ook andere studenten zien wat voor technieken zoal zijn besproken en weten zij naar wie ze moeten gaan voor uitleg. _Hey, 🤤 een for loop? Dat wil ik ook kunnen._
 
+Schrijf in je Learning Journal een aantal dingen die je geleerd hebt van server-side code. Link ook naar relevante bronnen.
+
 ## 2. Review client-side code
 Vandaag doe je een code-review bij minimaal 3 studenten uit een andere squad. Schrijf eerst op het whiteboard je naam, je GitHub Handle, en je WHOIS personID, en zorg dat 3 mensen hun naam naast jouw naam kunnen schrijven. 
 
@@ -51,9 +53,9 @@ Doe de review via het issue "Redesign visitekaartje"
     - [ ] punten
     - [ ] hebt
 - Bekijk alle HTML elementen m.b.v. MDN HTML elements reference. Schrijf een nieuwe comment bij het issue als je suggesties hebt voor een ander element.
-- Test het visitekaartje snel op Toegankelijkheid door een tabtest uit te voeren. Tab door de website heen en merk op of je alle belangrijke functionaliteiten kunt bereiken. Maak eventueel een issue aan met mogelijke oplossingen.
+- Test het visitekaartje snel op toegankelijkheid door een tabtest uit te voeren. Tab door de website heen en merk op of je alle belangrijke functionaliteiten kunt bereiken. Schrijf als comment op het issue mogelijke oplossingen als je problemen tegenkomt.
 - Check de CSS, schrijf een comment als je iets ziet waar je de ander mee kan helpen. Neem per review iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd, en schrijf dit in je Learning Journal.
-- Check de JS, schrijf zo nodig een comment, en neem iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd. Noteer dit in je Learning Journal (daar kan je dan zondag lekker mee gaan pielen 🤠)
+- Check de _client-side_ JS, schrijf zo nodig een comment, en neem iets mee wat je nog niet kent of wat een ander slim heeft gecodeerd. Noteer dit in je Learning Journal (daar kan je dan zondag lekker mee gaan pielen 🤠)
 
 
 
