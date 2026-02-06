@@ -9,6 +9,10 @@ Is het gelukt? Cool he!?
 ### Aanpak
 Vandaag krijg je feedback op je server-side code en een check op je client-side code.
 
+Je doet een review bij minimaal 3 andere studenten (tafels delen wij in). Schrijf eerst op het whiteboard je naam, je GitHub Handle, en je WHOIS personID, en zorg dat 3 mensen hun naam naast jouw naam kunnen schrijven. 
+
+Als je een review gaat doen, schrijf dan jouw naam bij de naam die je gaat reviewen. Aan het eind van de ochtend staan daar dus 3 namen!
+
 ## 1. Server-side code
 Eerst ga je jouw server-side code uitleggen aan twee peers. Deze opdracht doe je dus met 3 personen. 
 
@@ -26,9 +30,6 @@ Zo kunnen ook andere studenten zien wat voor technieken zoal zijn besproken en w
 Schrijf in je Learning Journal een aantal dingen die je geleerd hebt van server-side code. Link ook naar relevante bronnen.
 
 ## 2. Review client-side code
-Vandaag doe je een code-review bij minimaal 3 studenten uit een andere squad. Schrijf eerst op het whiteboard je naam, je GitHub Handle, en je WHOIS personID, en zorg dat 3 mensen hun naam naast jouw naam kunnen schrijven. 
-
-Als je een review gaat doen, schrijf dan jouw naam bij de naam die je gaat reviewen. Aan het eind van de ochtend staan daar dus 3 namen! 
 
 ### Hoe schrijf je nette feedback? 
 Als je iemand feedback geeft, is het belangrijk om duidelijk te beschrijven wat het probleem is en hoe het op te lossen is. Zorg er ook voor dat je nette Nederlandse of Engelse taal schrijft.  We zijn hier professionals.
