@@ -9,14 +9,20 @@ import { Liquid } from 'liquidjs';
 // Vul hier jouw eigen ID in (zie de instructies in de leertaak)
 const personID = 234
 
-// Doe een fetch naar een URL op de WHOIS API, ga pas verder als de fetch gelukt is
-const personResponse = await fetch('https://fdnd.directus.app/items/person/' + personID)
+// Maak een URL aan, zoals we dat ook in de browser deden
+const apiURL = 'https://fdnd.directus.app/items/person/' + personID
+
+// Controleer of de juiste URL in die variabele zit
+// (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
+console.log('Gebruikte API URL:', apiURL)
+
+// Doe een fetch naar die URL op de WHOIS API, ga pas verder als de fetch gelukt is
+const personResponse = await fetch(apiURL)
 
 // Lees van de response van die fetch het JSON object in, waar we iets mee kunnen doen
 const personResponseJSON = await personResponse.json()
 
 // Controleer eventueel de data in je console
-// (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
 // console.log(personResponseJSON)
 
 
